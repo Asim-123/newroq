@@ -1,50 +1,1651 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- login section-->
-    <section class="vh-100 gradient-custom">
-        <div class="container py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-              <div class="card text-dark" style="border-radius: 1rem;">
-                <div class="card-body p-5 text-center">
-      
-                  <div class="mb-md-5 mt-md-4 pb-5">
-                    <h2 class="fw-bold mb-2 text-uppercase">ROQ</h2>
-                    <h5 class="fw-bold mb-2 text-uppercase">Sign in to your ROQ Account</h5>
-                    <p class="text-dark-50 mb-5">Currently we are offering invitational based demos. Please provide us your company name and email address and we will contact you soon</p>
-                    <div class="form-outline form-white mb-4">
-                        <input type="text" placeholder="Company Name" id="typeEmailX" class="form-control form-control-lg" />
-                    </div>
-        
-                    <div class="form-outline form-white mb-4">
-                      <input type="email" placeholder="Email" id="typeEmailX" class="form-control form-control-lg" />
-                    </div>
-      
-      
-                    <p class="small mb-5 pb-lg-2 text-end"><a class="text-dark-50" href="#!"></a></p>
-      
-                    <button class="loginbtn rounded-4" type="submit">Join the Waitlist</button>
-          
-                  </div>
-      
-                  <!--<div>
-                    <p class="mb-0">Have no account yet?
-                     <a href="#!" class="text-dark-50 fw-bold">Register</a>
-                    </p>
-                  </div>-->
-      
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from console.roq.tech/login by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Dec 2022 07:13:27 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+  <meta charSet="utf-8" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous" />
+  <title>Login</title>
+  <meta name="next-head-count" content="7" />
+  <link rel="preload" href="_next/static/css/a8ef91a42b2baa74.css" as="style" />
+  <link rel="stylesheet" href="_next/static/css/a8ef91a42b2baa74.css" data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
+  <script src="_next/static/chunks/webpack-9699a75dab76d42f.js" defer=""></script>
+  <script src="_next/static/chunks/framework-4f791d3974d627e2.js" defer=""></script>
+  <script src="_next/static/chunks/main-25e198661a74f216.js" defer=""></script>
+  <script src="_next/static/chunks/pages/_app-51132e4c806bd6c3.js" defer=""></script>
+  <script src="_next/static/chunks/6070-729476ed91b0c22f.js" defer=""></script>
+  <script src="_next/static/chunks/99766-e8ca4879d8fbd53e.js" defer=""></script>
+  <script src="_next/static/chunks/pages/login-a138fa4a4d6d1978.js" defer=""></script>
+  <script src="_next/static/Tv7AgnWFQO3YRDl1agdUr/_buildManifest.js" defer=""></script>
+  <script src="_next/static/Tv7AgnWFQO3YRDl1agdUr/_ssgManifest.js" defer=""></script>
+  <script src="_next/static/Tv7AgnWFQO3YRDl1agdUr/_middlewareManifest.js" defer=""></script>
+  <style id="jss-server-side">
+    .jss2 {
+      height: 100%;
+      position: relative;
+    }
+
+    .jss4 {
+      height: 100%;
+      display: flex;
+      position: relative;
+    }
+
+    .jss6 {
+      display: flex;
+      min-height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #1F2B48;
+      background-image: url("static/icons/main-theme.svg");
+      background-repeat: repeat-y;
+      background-position: top -81px right;
+    }
+
+    .jss8 {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      margin-left: 0px;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media (max-width:479.95px) {
+      .jss8 {
+        width: auto;
+        padding: 0px 24px;
+        flex-grow: 0;
+      }
+    }
+
+    .jss34 {
+      height: 40px;
+      border-color: #1F2B48;
+    }
+
+    .jss12 {
+      width: 486px;
+      margin: 20px;
+      padding: 57px 64px;
+      border-radius: 24px;
+      background-color: #FFFFFF;
+    }
+
+    .jss13 {
+      position: relative;
+    }
+
+    .jss14 {
+      display: flex;
+      justify-content: center;
+    }
+
+    .jss18 {
+      margin-top: 32px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .jss16 {
+      width: 103.45px;
+      height: 50px;
+    }
+
+    .jss29 {
+      margin: 23px 0px;
+    }
+
+    .jss37 {
+      font-size: 0.875rem;
+      margin-top: 9px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .jss38 {
+      color: rgba(31, 43, 72, 0.8);
+      font-weight: normal;
+      margin-left: 2px;
+    }
+
+    .jss35 {
+      display: flex;
+      align-items: baseline;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .jss32 {
+      color: #828282;
+    }
+
+    .jss31 {
+      width: 100%;
+      height: 40px;
+    }
+
+    .jss20 {
+      margin: 32px 0px;
+    }
+
+    .jss22 {}
+
+
+    .jss27 {
+      font-size: 0.875rem;
+      text-align: right;
+      font-weight: 400;
+    }
+
+    .jss25 {
+      display: flex;
+      justify-content: end;
+    }
+
+    .jss10 {
+      top: 0;
+      width: 100%;
+      position: absolute;
+    }
+  </style>
+  <style data-href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format('woff')
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format('woff')
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format('woff')
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc-.woff) format('woff')
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fABc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCBc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBxc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0370-03FF
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCxc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format('woff2');
+      unicode-range: U+0370-03FF
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0370-03FF
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfCRc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfABc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfCBc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBxc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0370-03FF
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfCxc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfChc4AMP6lbBP.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+  </style>
+</head>
+
+<body>
+  <div id="__next" data-reactroot="">
+    <style data-emotion="css-global 1onav68">
+      html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        box-sizing: border-box;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      strong,
+      b {
+        font-weight: 700;
+      }
+
+      body {
+        margin: 0;
+        color: #1F2B48;
+        font-family: "Roboto", normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 0.15px;
+        background-color: #FAFAFA;
+      }
+
+      @media print {
+        body {
+          background-color: #FFFFFF;
+        }
+      }
+
+      body::backdrop {
+        background-color: #FAFAFA;
+      }
+    </style>
+    <div class="jss1 jss2 MuiBox-root css-0">
+      <style data-emotion="css 1d3bbye">
+        .css-1d3bbye {
+          box-sizing: border-box;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          width: 100%;
+          -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+        }
+      </style>
+      <div class="MuiGrid-root MuiGrid-container jss3 jss4 css-1d3bbye">
+        <style data-emotion="css b1mntw">
+          .css-b1mntw {
+            box-sizing: border-box;
+            margin: 0;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+          }
+
+          @media (min-width:480px) {
+            .css-b1mntw {
+              -webkit-flex-basis: 100%;
+              -ms-flex-preferred-size: 100%;
+              flex-basis: 100%;
+              -webkit-box-flex: 0;
+              -webkit-flex-grow: 0;
+              -ms-flex-positive: 0;
+              flex-grow: 0;
+              max-width: 100%;
+            }
+          }
+        </style>
+        <main class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-12 jss5 jss6 css-b1mntw">
+          <style data-emotion="css 1wxaqej">
+            .css-1wxaqej {
+              box-sizing: border-box;
+              margin: 0;
+              -webkit-flex-direction: row;
+              -ms-flex-direction: row;
+              flex-direction: row;
+            }
+          </style>
+          <section class="MuiGrid-root MuiGrid-item jss7 jss8 css-1wxaqej">
+            <div class="jss9 jss10 MuiBox-root css-0">
+              <style data-emotion="css o2vvhi">
+                .css-o2vvhi {
+                  position: relative;
+                  overflow: hidden;
+                  display: block;
+                  height: 4px;
+                  z-index: 0;
+                  background-color: rgb(175, 229, 247);
+                }
+
+                @media print {
+                  .css-o2vvhi {
+                    -webkit-print-color-adjust: exact;
+                    color-adjust: exact;
+                  }
+                }
+              </style><span
+                class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-indeterminate css-o2vvhi"
+                role="progressbar">
+                <style data-emotion="css 1xgsaul animation-ozg7p2">
+                  .css-1xgsaul {
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    top: 0;
+                    -webkit-transition: -webkit-transform 0.2s linear;
+                    transition: transform 0.2s linear;
+                    transform-origin: left;
+                    background-color: #2FBDEA;
+                    width: auto;
+                    -webkit-animation: animation-ozg7p2 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+                    animation: animation-ozg7p2 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+                  }
+
+                  @-webkit-keyframes animation-ozg7p2 {
+                    0% {
+                      left: -35%;
+                      right: 100%;
+                    }
+
+                    60% {
+                      left: 100%;
+                      right: -90%;
+                    }
+
+                    100% {
+                      left: 100%;
+                      right: -90%;
+                    }
+                  }
+
+                  @keyframes animation-ozg7p2 {
+                    0% {
+                      left: -35%;
+                      right: 100%;
+                    }
+
+                    60% {
+                      left: 100%;
+                      right: -90%;
+                    }
+
+                    100% {
+                      left: 100%;
+                      right: -90%;
+                    }
+                  }
+                </style><span
+                  class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate css-1xgsaul"></span>
+                <style data-emotion="css 18sakz3 animation-19gglwu">
+                  .css-18sakz3 {
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    top: 0;
+                    -webkit-transition: -webkit-transform 0.2s linear;
+                    transition: transform 0.2s linear;
+                    transform-origin: left;
+                    background-color: #2FBDEA;
+                    width: auto;
+                    -webkit-animation: animation-19gglwu 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.15s infinite;
+                    animation: animation-19gglwu 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.15s infinite;
+                  }
+
+                  @-webkit-keyframes animation-19gglwu {
+                    0% {
+                      left: -200%;
+                      right: 100%;
+                    }
+
+                    60% {
+                      left: 107%;
+                      right: -8%;
+                    }
+
+                    100% {
+                      left: 107%;
+                      right: -8%;
+                    }
+                  }
+
+                  @keyframes animation-19gglwu {
+                    0% {
+                      left: -200%;
+                      right: 100%;
+                    }
+
+                    60% {
+                      left: 107%;
+                      right: -8%;
+                    }
+
+                    100% {
+                      left: 107%;
+                      right: -8%;
+                    }
+                  }
+                </style><span
+                  class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar2Indeterminate css-18sakz3"></span>
+              </span>
+            </div>
+            <div class="jss11 jss12 MuiBox-root css-0">
+              <div class="jss13 MuiBox-root css-0">
+                <div class="jss14 MuiBox-root css-0">
+                  <style data-emotion="css 157d3wx">
+                    .css-157d3wx {
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                      font-weight: 600;
+                    }
+                  </style>
+                  <style data-emotion="css 1d5x4rv">
+                    .css-1d5x4rv {
+                      margin: 0;
+                      overflow-wrap: break-word;
+                      word-break: break-word;
+                      color: #1F2B48;
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                      font-weight: 600;
+                    }
+                  </style><a
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone jss15 css-1d5x4rv"
+                    href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="104" height="51" fill="none"
+                      class="jss16" viewBox="0 0 104 51">
+                      <path fill="#1F2B48"
+                        d="M34.651 50.244l-17.413-25.32h6.402c2.945 0 5.346-2.4 5.346-5.346a5.356 5.356 0 00-5.346-5.346h-9.602v27.113H9.46V9.655h14.18c5.474 0 9.923 4.45 9.923 9.923a9.89 9.89 0 01-7.778 9.667L38.428 47.62l-3.777 2.625zm48.831-22.271l-3.062 3.401 11.036 9.938 3.063-3.401-11.037-9.938z">
+                      </path>
+                      <path fill="#1F2B48"
+                        d="M78.695 9.655c-8.738 0-15.812 7.106-15.812 15.813 0 6.21-5.058 11.236-11.235 11.236-6.21 0-11.235-5.058-11.235-11.236 0-6.21 5.057-11.236 11.235-11.236 3.489 0 6.754 1.633 8.898 4.354l3.041-3.425a15.872 15.872 0 00-12.003-5.506c-8.739 0-15.813 7.106-15.813 15.813 0 8.739 7.106 15.813 15.813 15.813 8.738 0 15.812-7.106 15.812-15.813 0-6.21 5.057-11.236 11.235-11.236 6.178 0 11.235 5.058 11.235 11.236 0 6.21-5.057 11.236-11.235 11.236a11.236 11.236 0 01-8.898-4.386l-3.105 3.425a15.794 15.794 0 0012.003 5.538c8.738 0 15.812-7.106 15.812-15.813.064-8.707-7.042-15.813-15.748-15.813z">
+                      </path>
+                      <path fill="#1F2B48"
+                        d="M103.726.5H.274v50h29l-3.17-4.578H4.852V5.078h94.297v40.846H31.674l3.137 4.577h68.915V.5z">
+                      </path>
+                    </svg></a>
                 </div>
+                <style data-emotion="css 14l7suu">
+                  .css-14l7suu {
+                    margin: 0;
+                    font-family: "Roboto", normal;
+                    font-weight: normal;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    letter-spacing: 0.15px;
+                    overflow-wrap: break-word;
+                    word-break: break-word;
+                  }
+                </style>
+                <p class="MuiTypography-root MuiTypography-body1 jss17 jss18 css-14l7suu">Currently we are offering
+                  invitational based demos. Please provide us your company name and email address and we will contact
+                  you soon
+                </p>
+                <form>
+                  <div class="jss19 jss20 MuiBox-root css-0">
+                    <style data-emotion="css ikzlcq">
+                      .css-ikzlcq {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                      }
+
+                      .css-ikzlcq>:not(style)+:not(style) {
+                        margin: 0;
+                        margin-top: 16px;
+                      }
+                    </style>
+                    <div class="jss21 jss22 css-ikzlcq">
+                      <div class="jss23 MuiBox-root css-0">
+                        <style data-emotion="css feqhe6">
+                          .css-feqhe6 {
+                            display: -webkit-inline-box;
+                            display: -webkit-inline-flex;
+                            display: -ms-inline-flexbox;
+                            display: inline-flex;
+                            -webkit-flex-direction: column;
+                            -ms-flex-direction: column;
+                            flex-direction: column;
+                            position: relative;
+                            min-width: 0;
+                            padding: 0;
+                            margin: 0;
+                            border: 0;
+                            vertical-align: top;
+                            width: 100%;
+                          }
+                        </style>
+                        <div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-feqhe6">
+                          <style data-emotion="css-global 1prfaxn">
+                            @-webkit-keyframes mui-auto-fill {
+                              from {
+                                display: block;
+                              }
+                            }
+
+                            @keyframes mui-auto-fill {
+                              from {
+                                display: block;
+                              }
+                            }
+
+                            @-webkit-keyframes mui-auto-fill-cancel {
+                              from {
+                                display: block;
+                              }
+                            }
+
+                            @keyframes mui-auto-fill-cancel {
+                              from {
+                                display: block;
+                              }
+                            }
+                          </style>
+                          <style data-emotion="css 17jtra4">
+                            .css-17jtra4 {
+                              font-family: "Roboto", normal;
+                              font-weight: normal;
+                              font-size: 1rem;
+                              line-height: 1.4375em;
+                              letter-spacing: 0.15px;
+                              color: #1F2B48;
+                              box-sizing: border-box;
+                              position: relative;
+                              cursor: text;
+                              display: -webkit-inline-box;
+                              display: -webkit-inline-flex;
+                              display: -ms-inline-flexbox;
+                              display: inline-flex;
+                              -webkit-align-items: center;
+                              -webkit-box-align: center;
+                              -ms-flex-align: center;
+                              align-items: center;
+                              width: 100%;
+                              position: relative;
+                              border-radius: 8px;
+                            }
+
+                            .css-17jtra4.Mui-disabled {
+                              color: rgba(31, 43, 72, 0.1);
+                              cursor: default;
+                            }
+
+                            .css-17jtra4:hover .MuiOutlinedInput-notchedOutline {
+                              border-color: #1F2B48;
+                            }
+
+                            @media (hover: none) {
+                              .css-17jtra4:hover .MuiOutlinedInput-notchedOutline {
+                                border-color: rgba(0, 0, 0, 0.23);
+                              }
+                            }
+
+                            .css-17jtra4.Mui-focused .MuiOutlinedInput-notchedOutline {
+                              border-color: #2FBDEA;
+                              border-width: 2px;
+                            }
+
+                            .css-17jtra4.Mui-error .MuiOutlinedInput-notchedOutline {
+                              border-color: #F44336;
+                            }
+
+                            .css-17jtra4.Mui-disabled .MuiOutlinedInput-notchedOutline {
+                              border-color: rgba(31, 43, 72, 0.25);
+                            }
+                          </style>
+                          <div
+                            class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl css-17jtra4">
+                            <style data-emotion="css 2xrwt7">
+                              .css-2xrwt7 {
+                                font: inherit;
+                                letter-spacing: inherit;
+                                color: currentColor;
+                                padding: 4px 0 5px;
+                                border: 0;
+                                box-sizing: content-box;
+                                background: none;
+                                height: 1.4375em;
+                                margin: 0;
+                                -webkit-tap-highlight-color: transparent;
+                                display: block;
+                                min-width: 0;
+                                width: 100%;
+                                -webkit-animation-name: mui-auto-fill-cancel;
+                                animation-name: mui-auto-fill-cancel;
+                                -webkit-animation-duration: 10ms;
+                                animation-duration: 10ms;
+                                padding: 16.5px 14px;
+                              }
+
+                              .css-2xrwt7::-webkit-input-placeholder {
+                                color: currentColor;
+                                opacity: 0.42;
+                                -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                              }
+
+                              .css-2xrwt7::-moz-placeholder {
+                                color: currentColor;
+                                opacity: 0.42;
+                                -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                              }
+
+                              .css-2xrwt7:-ms-input-placeholder {
+                                color: currentColor;
+                                opacity: 0.42;
+                                -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                              }
+
+                              .css-2xrwt7::-ms-input-placeholder {
+                                color: currentColor;
+                                opacity: 0.42;
+                                -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                              }
+
+                              .css-2xrwt7:focus {
+                                outline: 0;
+                              }
+
+                              .css-2xrwt7:invalid {
+                                box-shadow: none;
+                              }
+
+                              .css-2xrwt7::-webkit-search-decoration {
+                                -webkit-appearance: none;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-2xrwt7::-webkit-input-placeholder {
+                                opacity: 0 !important;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-2xrwt7::-moz-placeholder {
+                                opacity: 0 !important;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-2xrwt7:-ms-input-placeholder {
+                                opacity: 0 !important;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-2xrwt7::-ms-input-placeholder {
+                                opacity: 0 !important;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-2xrwt7:focus::-webkit-input-placeholder {
+                                opacity: 0.42;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-2xrwt7:focus::-moz-placeholder {
+                                opacity: 0.42;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-2xrwt7:focus:-ms-input-placeholder {
+                                opacity: 0.42;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-2xrwt7:focus::-ms-input-placeholder {
+                                opacity: 0.42;
+                              }
+
+                              .css-2xrwt7.Mui-disabled {
+                                opacity: 1;
+                                -webkit-text-fill-color: rgba(31, 43, 72, 0.1);
+                              }
+
+                              .css-2xrwt7:-webkit-autofill {
+                                -webkit-animation-duration: 5000s;
+                                animation-duration: 5000s;
+                                -webkit-animation-name: mui-auto-fill;
+                                animation-name: mui-auto-fill;
+                              }
+
+                              .css-2xrwt7:-webkit-autofill {
+                                transition-delay: 9999s;
+                                transition-property: background-color, color;
+                              }
+
+                              .css-2xrwt7:-webkit-autofill {
+                                border-radius: inherit;
+                              }
+                            </style><input type="email" aria-invalid="false" autoComplete="username" autofocus=""
+                              id="email" name="email" placeholder="Email" tabindex="1"
+                              class="MuiOutlinedInput-input MuiInputBase-input css-2xrwt7" />
+                            <style data-emotion="css 19w1uun">
+                              .css-19w1uun {
+                                border-color: rgba(0, 0, 0, 0.23);
+                              }
+                            </style>
+                            <style data-emotion="css igs3ac">
+                              .css-igs3ac {
+                                text-align: left;
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                top: -5px;
+                                left: 0;
+                                margin: 0;
+                                padding: 0 8px;
+                                pointer-events: none;
+                                border-radius: inherit;
+                                border-style: solid;
+                                border-width: 1px;
+                                overflow: hidden;
+                                min-width: 0%;
+                                border-color: rgba(0, 0, 0, 0.23);
+                              }
+                            </style>
+                            <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+                              <style data-emotion="css nnbavb">
+                                .css-nnbavb {
+                                  float: unset;
+                                  padding: 0;
+                                  line-height: 11px;
+                                  -webkit-transition: width 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+                                  transition: width 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+                                }
+                              </style>
+                              <legend class="css-nnbavb"><span class="notranslate">&#8203;</span></legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="jss23 MuiBox-root css-0">
+                        <div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-feqhe6">
+                          <style data-emotion="css-global 1prfaxn">
+                            @-webkit-keyframes mui-auto-fill {
+                              from {
+                                display: block;
+                              }
+                            }
+
+                            @keyframes mui-auto-fill {
+                              from {
+                                display: block;
+                              }
+                            }
+
+                            @-webkit-keyframes mui-auto-fill-cancel {
+                              from {
+                                display: block;
+                              }
+                            }
+
+                            @keyframes mui-auto-fill-cancel {
+                              from {
+                                display: block;
+                              }
+                            }
+                          </style>
+                          <style data-emotion="css b0qadm">
+                            .css-b0qadm {
+                              font-family: "Roboto", normal;
+                              font-weight: normal;
+                              font-size: 1rem;
+                              line-height: 1.4375em;
+                              letter-spacing: 0.15px;
+                              color: #1F2B48;
+                              box-sizing: border-box;
+                              position: relative;
+                              cursor: text;
+                              display: -webkit-inline-box;
+                              display: -webkit-inline-flex;
+                              display: -ms-inline-flexbox;
+                              display: inline-flex;
+                              -webkit-align-items: center;
+                              -webkit-box-align: center;
+                              -ms-flex-align: center;
+                              align-items: center;
+                              width: 100%;
+                              position: relative;
+                              border-radius: 8px;
+                              padding-right: 14px;
+                            }
+
+                            .css-b0qadm.Mui-disabled {
+                              color: rgba(31, 43, 72, 0.1);
+                              cursor: default;
+                            }
+
+                            .css-b0qadm:hover .MuiOutlinedInput-notchedOutline {
+                              border-color: #1F2B48;
+                            }
+
+                            @media (hover: none) {
+                              .css-b0qadm:hover .MuiOutlinedInput-notchedOutline {
+                                border-color: rgba(0, 0, 0, 0.23);
+                              }
+                            }
+
+                            .css-b0qadm.Mui-focused .MuiOutlinedInput-notchedOutline {
+                              border-color: #2FBDEA;
+                              border-width: 2px;
+                            }
+
+                            .css-b0qadm.Mui-error .MuiOutlinedInput-notchedOutline {
+                              border-color: #F44336;
+                            }
+
+                            .css-b0qadm.Mui-disabled .MuiOutlinedInput-notchedOutline {
+                              border-color: rgba(31, 43, 72, 0.25);
+                            }
+                          </style>
+                          <div
+                            class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd css-b0qadm">
+                            <style data-emotion="css 981kue">
+                              .css-981kue {
+                                font: inherit;
+                                letter-spacing: inherit;
+                                color: currentColor;
+                                padding: 4px 0 5px;
+                                border: 0;
+                                box-sizing: content-box;
+                                background: none;
+                                height: 1.4375em;
+                                margin: 0;
+                                -webkit-tap-highlight-color: transparent;
+                                display: block;
+                                min-width: 0;
+                                width: 100%;
+                                -webkit-animation-name: mui-auto-fill-cancel;
+                                animation-name: mui-auto-fill-cancel;
+                                -webkit-animation-duration: 10ms;
+                                animation-duration: 10ms;
+                                padding: 16.5px 14px;
+                                padding-right: 0;
+                              }
+
+                              .css-981kue::-webkit-input-placeholder {
+                                color: currentColor;
+                                opacity: 0.42;
+                                -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                              }
+
+                              .css-981kue::-moz-placeholder {
+                                color: currentColor;
+                                opacity: 0.42;
+                                -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                              }
+
+                              .css-981kue:-ms-input-placeholder {
+                                color: currentColor;
+                                opacity: 0.42;
+                                -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                              }
+
+                              .css-981kue::-ms-input-placeholder {
+                                color: currentColor;
+                                opacity: 0.42;
+                                -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                              }
+
+                              .css-981kue:focus {
+                                outline: 0;
+                              }
+
+                              .css-981kue:invalid {
+                                box-shadow: none;
+                              }
+
+                              .css-981kue::-webkit-search-decoration {
+                                -webkit-appearance: none;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-981kue::-webkit-input-placeholder {
+                                opacity: 0 !important;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-981kue::-moz-placeholder {
+                                opacity: 0 !important;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-981kue:-ms-input-placeholder {
+                                opacity: 0 !important;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-981kue::-ms-input-placeholder {
+                                opacity: 0 !important;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-981kue:focus::-webkit-input-placeholder {
+                                opacity: 0.42;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-981kue:focus::-moz-placeholder {
+                                opacity: 0.42;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-981kue:focus:-ms-input-placeholder {
+                                opacity: 0.42;
+                              }
+
+                              label[data-shrink=false]+.MuiInputBase-formControl .css-981kue:focus::-ms-input-placeholder {
+                                opacity: 0.42;
+                              }
+
+                              .css-981kue.Mui-disabled {
+                                opacity: 1;
+                                -webkit-text-fill-color: rgba(31, 43, 72, 0.1);
+                              }
+
+                              .css-981kue:-webkit-autofill {
+                                -webkit-animation-duration: 5000s;
+                                animation-duration: 5000s;
+                                -webkit-animation-name: mui-auto-fill;
+                                animation-name: mui-auto-fill;
+                              }
+
+                              .css-981kue:-webkit-autofill {
+                                transition-delay: 9999s;
+                                transition-property: background-color, color;
+                              }
+
+                              .css-981kue:-webkit-autofill {
+                                border-radius: inherit;
+                              }
+                            </style><input type="text" 
+                              placeholder="Company name"
+                              class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd css-981kue" />
+                            
+                            <div
+                              class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1twjvpp">
+                              <style data-emotion="css 1fmeqvi">
+                                .css-1fmeqvi {
+                                  text-align: center;
+                                  -webkit-flex: 0 0 auto;
+                                  -ms-flex: 0 0 auto;
+                                  flex: 0 0 auto;
+                                  font-size: 1.5rem;
+                                  padding: 8px;
+                                  border-radius: 50%;
+                                  overflow: visible;
+                                  color: #1F2B48;
+                                  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                  padding: 5px;
+                                  font-size: 1.125rem;
+                                  padding: 12px;
+                                }
+
+                                .css-1fmeqvi:hover {
+                                  background-color: rgba(31, 43, 72, 0.04);
+                                }
+
+                                @media (hover: none) {
+                                  .css-1fmeqvi:hover {
+                                    background-color: transparent;
+                                  }
+                                }
+
+                                .css-1fmeqvi.Mui-disabled {
+                                  background-color: transparent;
+                                  color: rgba(31, 43, 72, 0.25);
+                                }
+                              </style>
+                              <style data-emotion="css ctoszi">
+                                .css-ctoszi {
+                                  display: -webkit-inline-box;
+                                  display: -webkit-inline-flex;
+                                  display: -ms-inline-flexbox;
+                                  display: inline-flex;
+                                  -webkit-align-items: center;
+                                  -webkit-box-align: center;
+                                  -ms-flex-align: center;
+                                  align-items: center;
+                                  -webkit-box-pack: center;
+                                  -ms-flex-pack: center;
+                                  -webkit-justify-content: center;
+                                  justify-content: center;
+                                  position: relative;
+                                  box-sizing: border-box;
+                                  -webkit-tap-highlight-color: transparent;
+                                  background-color: transparent;
+                                  outline: 0;
+                                  border: 0;
+                                  margin: 0;
+                                  border-radius: 0;
+                                  padding: 0;
+                                  cursor: pointer;
+                                  -webkit-user-select: none;
+                                  -moz-user-select: none;
+                                  -ms-user-select: none;
+                                  user-select: none;
+                                  vertical-align: middle;
+                                  -moz-appearance: none;
+                                  -webkit-appearance: none;
+                                  -webkit-text-decoration: none;
+                                  text-decoration: none;
+                                  color: inherit;
+                                  text-align: center;
+                                  -webkit-flex: 0 0 auto;
+                                  -ms-flex: 0 0 auto;
+                                  flex: 0 0 auto;
+                                  font-size: 1.5rem;
+                                  padding: 8px;
+                                  border-radius: 50%;
+                                  overflow: visible;
+                                  color: #1F2B48;
+                                  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                  padding: 5px;
+                                  font-size: 1.125rem;
+                                  padding: 12px;
+                                }
+
+                                .css-ctoszi::-moz-focus-inner {
+                                  border-style: none;
+                                }
+
+                                .css-ctoszi.Mui-disabled {
+                                  pointer-events: none;
+                                  cursor: default;
+                                }
+
+                                @media print {
+                                  .css-ctoszi {
+                                    -webkit-print-color-adjust: exact;
+                                    color-adjust: exact;
+                                  }
+                                }
+
+                                .css-ctoszi:hover {
+                                  background-color: rgba(31, 43, 72, 0.04);
+                                }
+
+                                @media (hover: none) {
+                                  .css-ctoszi:hover {
+                                    background-color: transparent;
+                                  }
+                                }
+
+                                .css-ctoszi.Mui-disabled {
+                                  background-color: transparent;
+                                  color: rgba(31, 43, 72, 0.25);
+                                }
+                              </style>
+                              <style data-emotion="css 1e2dcm1">
+                                .css-1e2dcm1 {
+                                  z-index: 1500;
+                                  pointer-events: none;
+                                }
+                              </style>
+                            </div>
+                            <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+                              <legend class="css-nnbavb"><span class="notranslate">&#8203;</span></legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="jss24 jss25 MuiBox-root css-0">
+                        <style data-emotion="css 1l0is04">
+                          .css-1l0is04 {
+                            -webkit-text-decoration: underline;
+                            text-decoration: underline;
+                            text-decoration-color: rgba(31, 43, 72, 0.4);
+                            font-weight: 600;
+                          }
+
+                          .css-1l0is04:hover {
+                            text-decoration-color: inherit;
+                          }
+                        </style>
+                        <style data-emotion="css 12k87ew">
+                          .css-12k87ew {
+                            margin: 0;
+                            overflow-wrap: break-word;
+                            word-break: break-word;
+                            color: #1F2B48;
+                            -webkit-text-decoration: underline;
+                            text-decoration: underline;
+                            text-decoration-color: rgba(31, 43, 72, 0.4);
+                            font-weight: 600;
+                          }
+
+                          .css-12k87ew:hover {
+                            text-decoration-color: inherit;
+                          }
+                        </style><a
+                          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways jss26 jss27 css-12k87ew"
+                          href="forgot-password.html"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="jss28 jss29 css-ikzlcq"><span class="MuiBox-root css-0">
+                      <style data-emotion="css 1v7mkc0">
+                        .css-1v7mkc0 {
+                          -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                          transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                        }
+
+                        .css-1v7mkc0 .MuiLoadingButton-startIconLoadingStart,
+                        .css-1v7mkc0 .MuiLoadingButton-endIconLoadingEnd {
+                          -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                          transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                          opacity: 0;
+                        }
+
+                        .css-1v7mkc0.MuiLoadingButton-loading {
+                          color: transparent;
+                        }
+                      </style>
+                      <style data-emotion="css 1pglc0y">
+                        .css-1pglc0y {
+                          font-family: "Roboto", normal;
+                          font-weight: 500;
+                          line-height: 1.73;
+                          text-transform: uppercase;
+                          font-size: 0.9375rem;
+                          min-width: 64px;
+                          padding: 8px 22px;
+                          border-radius: 8px;
+                          -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                          transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                          color: #FFFFFF;
+                          background-color: #2FBDEA;
+                          box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+                          border-radius: 64px;
+                          -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                          transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                        }
+
+                        .css-1pglc0y:hover {
+                          -webkit-text-decoration: none;
+                          text-decoration: none;
+                          background-color: #28A1C7;
+                          box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+                        }
+
+                        @media (hover: none) {
+                          .css-1pglc0y:hover {
+                            background-color: #2FBDEA;
+                          }
+                        }
+
+                        .css-1pglc0y:active {
+                          box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+                        }
+
+                        .css-1pglc0y.Mui-focusVisible {
+                          box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+                        }
+
+                        .css-1pglc0y.Mui-disabled {
+                          color: rgba(31, 43, 72, 0.25);
+                          box-shadow: none;
+                          background-color: rgba(31, 43, 72, 0.1);
+                        }
+
+                        .css-1pglc0y .MuiLoadingButton-startIconLoadingStart,
+                        .css-1pglc0y .MuiLoadingButton-endIconLoadingEnd {
+                          -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                          transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                          opacity: 0;
+                        }
+
+                        .css-1pglc0y.MuiLoadingButton-loading {
+                          color: transparent;
+                        }
+                      </style>
+                      <style data-emotion="css 5tx22d">
+                        .css-5tx22d {
+                          display: -webkit-inline-box;
+                          display: -webkit-inline-flex;
+                          display: -ms-inline-flexbox;
+                          display: inline-flex;
+                          -webkit-align-items: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                          -webkit-justify-content: center;
+                          justify-content: center;
+                          position: relative;
+                          box-sizing: border-box;
+                          -webkit-tap-highlight-color: transparent;
+                          background-color: transparent;
+                          outline: 0;
+                          border: 0;
+                          margin: 0;
+                          border-radius: 0;
+                          padding: 0;
+                          cursor: pointer;
+                          -webkit-user-select: none;
+                          -moz-user-select: none;
+                          -ms-user-select: none;
+                          user-select: none;
+                          vertical-align: middle;
+                          -moz-appearance: none;
+                          -webkit-appearance: none;
+                          -webkit-text-decoration: none;
+                          text-decoration: none;
+                          color: inherit;
+                          font-family: "Roboto", normal;
+                          font-weight: 500;
+                          line-height: 1.73;
+                          text-transform: uppercase;
+                          font-size: 0.9375rem;
+                          min-width: 64px;
+                          padding: 8px 22px;
+                          border-radius: 8px;
+                          -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                          transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                          color: #FFFFFF;
+                          background-color: #2FBDEA;
+                          box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+                          border-radius: 64px;
+                          -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                          transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                        }
+
+                        .css-5tx22d::-moz-focus-inner {
+                          border-style: none;
+                        }
+
+                        .css-5tx22d.Mui-disabled {
+                          pointer-events: none;
+                          cursor: default;
+                        }
+
+                        @media print {
+                          .css-5tx22d {
+                            -webkit-print-color-adjust: exact;
+                            color-adjust: exact;
+                          }
+                        }
+
+                        .css-5tx22d:hover {
+                          -webkit-text-decoration: none;
+                          text-decoration: none;
+                          background-color: #28A1C7;
+                          box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+                        }
+
+                        @media (hover: none) {
+                          .css-5tx22d:hover {
+                            background-color: #2FBDEA;
+                          }
+                        }
+
+                        .css-5tx22d:active {
+                          box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+                        }
+
+                        .css-5tx22d.Mui-focusVisible {
+                          box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+                        }
+
+                        .css-5tx22d.Mui-disabled {
+                          color: rgba(31, 43, 72, 0.25);
+                          box-shadow: none;
+                          background-color: rgba(31, 43, 72, 0.1);
+                        }
+
+                        .css-5tx22d .MuiLoadingButton-startIconLoadingStart,
+                        .css-5tx22d .MuiLoadingButton-endIconLoadingEnd {
+                          -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                          transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                          opacity: 0;
+                        }
+
+                        .css-5tx22d.MuiLoadingButton-loading {
+                          color: transparent;
+                        }
+                      </style><button
+                        class="MuiLoadingButton-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root jss30 jss31 css-5tx22d"
+                        tabindex="0" type="submit" data-testid="action-button">Join the Waitlist</button>
+                    </span>
+                    <style data-emotion="css w335bo">
+                      .css-w335bo {
+                        margin: 0;
+                        -webkit-flex-shrink: 0;
+                        -ms-flex-negative: 0;
+                        flex-shrink: 0;
+                        border-width: 0;
+                        border-style: solid;
+                        border-color: rgba(0, 0, 0, 0.12);
+                        border-bottom-width: thin;
+                        -webkit-align-self: stretch;
+                        -ms-flex-item-align: stretch;
+                        align-self: stretch;
+                        height: auto;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        white-space: nowrap;
+                        text-align: center;
+                        border: 0;
+                      }
+
+                      .css-w335bo::before,
+                      .css-w335bo::after {
+                        position: relative;
+                        width: 100%;
+                        border-top: thin solid rgba(0, 0, 0, 0.12);
+                        top: 50%;
+                        content: "";
+                        -webkit-transform: translateY(50%);
+                        -moz-transform: translateY(50%);
+                        -ms-transform: translateY(50%);
+                        transform: translateY(50%);
+                      }
+                    </style>
+                    <div
+                      class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem MuiDivider-withChildren css-w335bo"
+                      role="separator">
+                      <style data-emotion="css c1ovea">
+                        .css-c1ovea {
+                          display: inline-block;
+                          padding-left: calc(8px * 1.2);
+                          padding-right: calc(8px * 1.2);
+                        }
+                      </style><span class="MuiDivider-wrapper css-c1ovea">
+                        <style data-emotion="css i6m5ul">
+                          .css-i6m5ul {
+                            margin: 0;
+                            font-family: "Roboto", normal;
+                            font-weight: normal;
+                            font-size: 0.875rem;
+                            line-height: 1.43;
+                            letter-spacing: 0.15px;
+                            overflow-wrap: break-word;
+                            word-break: break-word;
+                          }
+                        </style>
+                      </span>
+                    </div>
+                    <style data-emotion="css v8vmx1">
+                      .css-v8vmx1 {
+                        font-family: "Roboto", normal;
+                        font-weight: 500;
+                        line-height: 1.73;
+                        text-transform: uppercase;
+                        font-size: 0.9375rem;
+                        min-width: 64px;
+                        padding: 7px 21px;
+                        border-radius: 8px;
+                        -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                        border: 1px solid rgba(31, 43, 72, 0.5);
+                        color: #1F2B48;
+                        border-radius: 64px;
+                        border-color: rgba(31, 43, 72, 0.1);
+                      }
+
+                      .css-v8vmx1:hover {
+                        -webkit-text-decoration: none;
+                        text-decoration: none;
+                        background-color: rgba(31, 43, 72, 0.04);
+                        border: 1px solid #1F2B48;
+                      }
+
+                      @media (hover: none) {
+                        .css-v8vmx1:hover {
+                          background-color: transparent;
+                        }
+                      }
+
+                      .css-v8vmx1.Mui-disabled {
+                        color: rgba(31, 43, 72, 0.25);
+                        border: 1px solid rgba(31, 43, 72, 0.25);
+                      }
+
+                      .css-v8vmx1:hover {
+                        border-color: rgba(31, 43, 72, 0.1);
+                      }
+                    </style>
+                </form>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+  <script id="__NEXT_DATA__"
+    type="application/json">{"props":{"pageProps":{"_nextI18Next":{"initialI18nStore":{"en":{"common":{"array-contain":"{{each}} {{property}} must contain {{constraints.0}} values","array-max-size":"{{each}} {{property}} must contain not more than {{constraints.0}}","array-min-size":"{{each}} {{property}} must contain at least {{constraints.0}}","array-not-contains":"{{each}} {{property}} should not contain {{constraints.0}} values","array-not-empty":"{{each}} {{property}} should not be empty","array-unique":"{{each}} All {{property}}'s elements must be unique","should-allow":"{{property}} allowed {{value}}","equals":"{{each}} {{property}} should not be equal to {{constraints.0}}","is-defined":"{{each}} {{property}} should not be null or undefined","is-empty":"{{each}} {{property}} must be empty","is-in":"{{each}} {{property}} must be one of the following values: {{constraints.0}}","is-not-empty":"{{each}} {{property}} should not be empty","is-not-in":"{{each}} {{property}} should not be one of the following values: {{constraints.0}}","is-optional":"{{property}} is optional","not-equals":"{{each}} {{property}} should not be equal to {{constraints.0}}","validate":"{{property}} Resolve promise before validation","validate-by":"{{property}} is not validated  {{options}}","validate-if":"{{property}} is ignored","validate-nested":"{{each}} {{property}} must be either object or array","validate-promise":"{{property}} Resolve promise before validation","max-date":"maximal allowed date for {{each}} {{property}} is {{constraints.0}}","min-date":"minimal allowed date for {{each}} {{property}} is {{constraints.0}}","is-divisible-by":"{{each}} {{property}} must be divisible by {{constraints.0}}","is-negative":"{{each}} {{property}} must be a negative number","is-positive":"{{each}} {{property}} must be a positive number","max":"{{each}} {{property}} must not be greater than {{constraints.0}}","min":"{{each}} {{property}} must not be less than {{constraints.0}}","is-instance":"{{property}} is not instance of the specified object","is-not-empty-object":"{{property}} should not be an empty object","contains":"{{each}} {{property}} must contain a {{constraints.0}} string","is-alpha":"{{each}} {{property}} must contain only letters (a-zA-Z)","is-alpha-numeric":"{{each}} {{property}} must contain only letters and numbers","is-ascii":"{{each}} {{property}} must contain only ASCII characters","is-base-32":"{{each}} {{property}} must be base32 encoded","is-base-64":"{{each}} {{property}} must be base64 encoded","is-bic":"{{each}} {{property}} must be a BIC or SWIFT code","is-boolean-string":"{{each}} {{property}} must be a boolean string","is-btc-address":"{{each}} {{property}} must be a BTC address","is-byte-length":"{{each}} {{property}} byte length must fall into ({{constraints.0}} - {{constraints.1}}) range","is-credit-card":"{{each}} {{property}} must be a credit card","is-data-uri":"{{each}} {{property}} must be a data uri format","is-currency":"{{each}} {{property}} must be a currency","is-date-string":"{{each}} {{property}} must be a valid ISO 8601 date string","is-decimal":"{{each}} {{property}} is not a valid decimal number.","is-ean":"{{each}} {{property}} must be an EAN (European Article Number)","is-email":"{{each}} {{property}} must be an email","is-firebase-push-id":"{{each}} {{property}} must be a Firebase Push Id","is-fqdn":"{{each}} {{property}} must be a valid domain name","is-full-width":"{{each}} {{property}} must contain a full-width characters","is-half-width":"{{each}} {{property}} must contain a half-width characters","is-hash":"{{each}} {{property}} must be a hash of type {{constraints.0}}","is-hexa-decimal":"{{each}} {{property}} must be a hexadecimal number","is-hex-color":"{{each}} {{property}} must be a hexadecimal color","is-hsl":"{{each}} {{property}} must be a HSL color","is-iban":"{{each}} {{property}} must be an IBAN","is-ip":"{{each}} {{property}} must be an ip address","is-isbn":"{{each}} {{property}} must be an ISBN","is-isin":"{{each}} {{property}} must be an ISIN","is-json":"{{each}} {{property}} must be a json string","is-jwt":"{{each}} {{property}} must be a JWT string","is-locale":"{{each}} {{property}} must be a locale","is-lower-case":"{{each}} {{property}} must be a lower case string","is-magnet-uri":"{{each}} {{property}} must be magnet uri format","is-military-time":"{{each}} {{property}} must be a valid representation of military time in the format HH:MM","is-mime-type":"{{each}} {{property}} must be  MIME type format","is-mongo-id":"{{each}} {{property}} must be a mongodb id","is-mobile-phone":"{{each}} {{property}} must be a phone number","is-multi-byte":"{{each}} {{property}} must contain one or more multibyte chars","is-number-string":"{{each}} {{property}} must be a number string","is-octal":"{{each}} {{property}} must be valid octal number","is-passport-number":"{{each}} {{property}} must be valid passport number","is-phone-number":"{{each}} {{property}} must be a valid phone number","is-port":"{{each}} {{property}} must be a port","is-postal-code":"{{each}} {{property}} must be a postal code","is-rfc-3339":"{{each}} {{property}} must be RFC 3339 date","is-rgb-color":"{{each}} {{property}} must be a rgb color","is-sem-ver":"{{each}} {{property}} must be a Semantic Versioning Specification","is-surrogate-pair":"{{each}} {{property}} must contain any surrogate pairs chars","is-upper-case":"{{each}} {{property}} must contain an uppercase string","is-url":"{{each}} {{property}} must be an URL","is-uuid":"{{each}} {{property}} must be a UUID","is-variable-width":"{{each}} {{property}} must contain a full-width and half-width characters","length":"{{each}} {{property}} doesn't length falls in a range ({{min}} - {{max}})","matches":"{{each}} {{property}} must match {{constraints.0}} regular expression","max-length":"{{each}} {{property}} must be shorter than or equal to {{constraints.0}} characters","min-length":"{{each}} {{property}} must be higher than or equal to {{constraints.0}} characters","not-contains":"{{each}} {{property}} must contain a {{constraints.0}} string","is-ethereum-address":"{{each}} {{property}} must be an Ethereum address","is-array":"{{each}} {{property}} must be an array","is-boolean":"{{each}} {{property}} must be a boolean value","is-date":"{{each}} {{property}} must be a Date instance","is-enum":"{{each}} {{property}} must be a valid enum value","is-int":"{{each}} {{property}} must be an integer number","is-number":"{{each}} {{property}} must be a number conforming to the specified constraints","is-object":"{{each}} {{property}} must be an object","is-string":"{{each}} {{property}} must be a string","event-type-not-found":"EventType with id {{id}} not found","event-subscriber-not-found":"EventSubscriber with id {{id}} not found","deployment-info-not-found":"There is no deployment info","conversation-user-not-found":"ConversationUser with id {{id}} not found","ws-auth-failure":"Auth Failed","conversation-not-found":"Conversation with id {{id}} not found","message-status-not-found":"MessageStatus with id {{id}} not found","message-not-found":"Message with id {{id}} not found","ws-validation-failed":"Validation Failed","translation-key-not-found":"TranslationKey with id {{id}} not found","translation-not-found":"Translation with id {{id}} not found","translation-key-with-key-already-exists":"The key {{key}} already exists","translation-value-already-exists":"A translation for this locale and this key already exists","event-example-data-not-found":"EventExampleData with id {{id}} not found","event-record-not-found":"EventRecord with id {{id}} not found","invalid-credentials":"Credentials are wrong","invalid-token":"Token provided is wrong","missing-auth":"Authorization header is not passed","invalid-auth-header":"Authorization header type is not supported","disallowed-domain":"{{domain}} is not allowed","invalid-mail-type":"Invalid mailType provided","invalid-recipient":"Recipient does not exist","mail-type-not-found":"MailType with id {{id}} not found","notification-type-channel-user-not-found":"NotificationTypeChannelUser with id {{id}} not found","notification-type-channel-not-found":"NotificationTypeChannel with id {{id}} not found","notification-type-not-found":"NotificationType with id {{id}} not found","notification-user-not-found":"NotificationUser with id {{id}} not found","notification-not-found":"Notification with id {{id}} not found","user-not-authenticated":"Action could not be complete without authenticated userId","notification-and-user-not-found":"Notification with id {{id}} and notificationUserId {{notificationUserId}} not found","user-invitation-not-found":"UserInvite with id {{id}} not found","user-provider-not-found":"UserProvider with id {{id}} not found","user-token-not-found":"UserToken with id {{id}} not found","user-token-not-found-in-db":"There is no such token in db","user-not-found":"User with id {{id}} not found","invalid-user-token":"User with id {{id}} not found","expired-user-token":"Token has been expired","user-invite-acceptance-failed":"Unable to accept because invite is already {{userInviteStatus}}","bulk-user-invite-limit-exceeded":"Only {{maxAllowed}} can be invited at once","user-invite-resending-failed":"Unable to resend because invite is already {{userInviteStatus}}","user-invite-cancellation-failed":"Unable to cancel user invite because invite is already {{userInviteStatus}}","user-already-exists":"The user with the email address {{email}} already exists!","user-already-invited":"{{email}} has already been invited","user-invite-already-accepted":"Invitation has already been accepted","user-invite-already-sent":"Invite has already been sent!","file-status-update-failed":"Can't set the status '{{status}}' for already uploaded file","file-not-found":"File with id {{id}} not found","file-not-completely-uploaded-status-update-failed":"Can't set the status {{status}} for file that is not completely uploaded","token":"token","password":"password","new-password":"newPassword","email":"Email address","provider-id":"providerId","provider-user-id":"providerUserId","first-name":"First Name","last-name":"Last Name","avatar":"avatar","timezone":"Timezone","locale":"Locale","event-type":"eventType","consumer":"consumer","parameters":"parameters","order":"order","sort":"sort","key":"Key","value":"value","search":"search","filter":"filter","api":"api","id":"id","file-name":"File Name","file-size":"fileSize","file-type":"fileType","custom-meta-data":"customMetaData","path":"path","user-login-history-id":"userLoginHistoryId","avatar-image-identifier":"avatarImageIdentifier","phone":"phone","roq-identifier":"roqIdentifier","opted-in":"optedIn","user-id":"User ID","ip":"ip","host":"host","timestamp":"timestamp","subscribe-to-mail":"subscribeToMail","data":"data","ids":"ids","message-id":"messageId","conversation-user-id":"conversationUserId","title":"title","is-group":"isGroup","archived":"archived","owner-id":"ownerId","owner-ids":"ownerIds","member-ids":"memberIds","conversation-id":"conversationId","message-status-id":"messageStatusId","body":"body","author-id":"authorId","read":"read","notified":"notified","user-ids":"userIds","time-range":"timeRange","first-message":"firstMessage","find-or-create":"findOrCreate","conversation":"conversation","include-archived":"includeArchived","limit":"limit","offset":"offset","full-name":"fullName","initials":"initials","members":"members","total-count":"totalCount","owner":"Owner","users":"Users","created-at":"Created At","updated-at":"updatedAt","unread-count":"unreadCount","last-message":"lastMessage","last-message-timestamp":"lastMessageTimestamp","mentioned-ids":"mentionedIds","read-by":"readBy","last-timestamp":"lastTimestamp","message-ids":"messageIds","member-id":"memberId","is-online":"isOnline","translation-id":"translationId","locales":"locales","translation-key-id":"translationKeyId","content":"content","entity-uuid":"entityUUID","entity-type":"entityType","meta-obj":"metaObj","name":"Name","object":"object","start-date":"startDate","end-date":"endDate","count":"count","api-key":"apiKey","api-secret":"apiSecret","access-token":"accessToken","to":"to","subject":"subject","mail-type":"mailType","entity-id":"entityId","directly-injected-variables":"directlyInjectedVariables","description":"description","template-id":"templateId","payload":"payload","notification-type-id":"notificationTypeId","notification-user-id":"notificationUserId","notifying-users":"notifyingUsers","meta":"meta","link":"link","notification-type-channel-id":"notificationTypeChannelId","type":"type","sub-type":"subType","default-enabled":"defaultEnabled","enabled":"enabled","icon":{"picker":{"input":{"search":{"placeholder":"Search icons…"}}}},"default-active":"defaultActive","active":"active","document-owner-id":"documentOwnerId","status":{"active":"Active","inactive":"Inactive"},"size":"Size","content-type":"contentType","expires-at":"expiresAt","file-max-size":"fileMaxSize","action":"Action","session-id":"sessionId","config":"config","user-provider-id":"userProviderId","user-invite-id":"userInviteId","user-token-id":"userTokenId","provider-identifier":"providerIdentifier","provider-user-identifier":"providerUserIdentifier","keepLoggedIn":"keepLoggedIn","valid-till":"validTill","user-email-already-exists":"A user with email {{email}} already exists","user-incorrect-email-password":"The email/password you entered are not correct","user-invalid-token":"Token is not valid","invalid-user-password":"Invalid password","user-not-confirmed":"User is not confirmed","user-email-not-provided":"No email provided","user-invalid-current-password":"Current password is incorrect","invalid-api-key":"Invalid api key","default-locale-undefined":"Default locale {{defaultLocale}} undefined","user-login-history-not-found":"UserLoginHistory with id {{id}} not found","user-max-allowed":"Only {{maxAllowed}} can be invited at once","unauthorized-exception":"{{message}}","json-type-exception":"json-type-exception","internal-server-error":"Internal server error","generic-user-creation-failed":"ROQ Platform Gateway is currently unavailable. Action: Create User","generic-user-invite-acceptance-failed":"ROQ Platform  is currently unavailable. Action: Accept User Invite","generic-user-invite-creation-failed":"ROQ Platform Gateway is currently unavailable. Action: Create User Invite","generic-user-providers-deletion-failed":"ROQ Platform Gateway is currently unavailable. Action: Delete User Providers","generic-user-providers-fetching-failed":"ROQ Platform Gateway is currently unavailable. Action: Get User Providers","generic-user-refresh-token-creation-failed":"Response from ROQ Platform Gateway is currently unavailable. Action: Create User Refresh Token","generic-user-refresh-token-rotation-failed":"ROQ Platform Gateway is currently unavailable. Action: Rotate Refresh Token","generic-user-refresh-token-verification-failed":"ROQ Platform Gateway is currently unavailable. Action: Verify User Refresh Token","generic-user-reset-password-token-fetching-failed":"ROQ Platform Gateway is currently unavailable. Action: Reset Password Token","generic-user-token-deletion-failed":"ROQ Platform Gateway is currently unavailable. Action: Delete User Token","generic-user-validate-email-token-creation-failed":"ROQ Platform Gateway is currently unavailable. Action: Create User Validate Email Token","generic-user-invite-cancellation-failed":"ROQ Platform Gateway is currently unavailable. Action: Cancel User Invite","generic-valid-user-token-fetching-failed":"ROQ Platform Gateway is currently unavailable. Action: Get Valid User Token","generic-user-invite-fetching-failed":"ROQ Platform Gateway is currently unavailable. Action: Get User Invite","generic-user-invite-refresh-failed":"ROQ Platform Gateway is currently unavailable. Action: Refresh User Invite","graphql-validation-failed":"Invalid Input","graphql-parse-failed":"graphql-parse-failed","invalid-uuid":"Provided argument should have been a valid uuid","generic-file-creation-failed":"ROQ Platform Gateway is currently unavailable. Action: Create File","generic-file-fetching-failed":"ROQ Platform Gateway is currently unavailable. Action: Get File","generic-file-updation-failed":"ROQ Platform Gateway is currently unavailable. Action: Update File Status","generic-health-check-failed":"ROQ Platform Gateway is currently unavailable. Action: {{service}} Health Check","generic-platform-creation-failed":"ROQ Platform Gateway is currently unavailable. Action: Create Platform Token","unauthorized":"Unauthorized","unique-constraint-violated":"This request is invalid as it violates an unique constraint","notification-mail-history-not-found":"NotificationMailHistory with id {{id}} not found","notification-sms-history-not-found":"NotificationSmsHistory with id {{id}} not found","notification-type-category-not-found":"NotificationTypeCategory with id {{id}} not found","notification-type-channel-mail-not-found":"NotificationTypeChannelMail with id {{id}} not found","notification-type-channel-sms-localized-not-found":"NotificationTypeChannelSmsLocalized with id {{id}} not found","notification-type-channel-sms-not-found":"NotificationTypeChannelSms with id {{id}} not found","notification-type-channel-web-localized-not-found":"NotificationTypeChannelWebLocalized with id {{id}} not found","notification-type-channel-web-not-found":"NotificationTypeChannelWeb with id {{id}} not found","notification-type-user-preference-not-found":"NotificationTypeUserPreference with id {{id}} not found","notification-type-with-given-key-not-found":"Notification Type with key {{key}} not found.","notification-in-app-not-found":"NotificationInApp with id {{id}} not found","file-association-not-found":"FileAssociation with id {{id}} not found","file-category-with-given-key-not-found":"FileCategory with key {{fileCategory}} not found","file-category-not-found":"FileCategory with id {{id}} not found","file-category-content-type-not-found":"FileCategoryContentType with id {{id}} not found","invalid-content-type-for-file-category":"Invalid contentType {{contentType}} against category {{fileCategory}}","environment-not-found":"Environment with id {{id}} not found","organization-not-found":"Organization with id {{id}} not found","application-not-found":"Application with id {{id}} not found","project-not-found":"Project with id {{id}} not found","organization-already-exists":"Organization with name {{name}} already exists","file-category-contains-file":"It is not possible to delete a category that has files attached","access-restricted":{"description":"We are currently in closed beta and you don't seem to be whitelisted for it yet. However you can request access to our close beta: roq.tech","header":"You're too early ;)","request-access-btn-text":"Request Access"},"role-is-used-error":"It is not possible to delete a role that is currently assigned","something-went-wrong":"Something Went Wrong. Please Try Later","environment":{"type":{"development":{"label":"Development"},"qa":{"label":"QA"},"snapshot":{"label":"Snapshot"},"staging":{"label":"Staging"},"production":{"label":"Production"}}},"authorization":{"error":{"session":{"empty":"Session is empty. Something went wrong. Please, try to reload the page.","expired":"You signed in with another tab or window. Reload to refresh your session."}},"input":{"divider":{"label":"Or"},"terms-and-conditions":{"label":"I accept the \u003cstrong\u003e\u003clink1\u003eterms \u0026 conditions\u003c/link1\u003e\u003c/strong\u003e and \u003cstrong\u003e\u003clink2\u003eprivacy policy\u003c/link2\u003e\u003c/strong\u003e."}},"go-back-login":{"label":"Go back to","link":"\u003cstrong\u003eLog in\u003c/strong\u003e"},"register":{"label":"Have no account yet?","link":"\u003cstrong\u003eRegister\u003c/strong\u003e"},"forgot-password":"Forgot password?","onboarding":"Let us know a bit more about yourself.","login":{"label":"Already have an account?","link":"\u003cstrong\u003eSign in\u003c/strong\u003e"},"join":"You’re invited to join {{name}}"},"login":{"title":"Login","form":{"title":"Sign in to your ROQ Account"}},"error":{"pageTitle":"Something went wrong","subtitle":"Something went wrong. Please contact us","action":"Go to Project Summary"},"not-found":{"pageTitle":"Page not found","action":{"authenticated":"Go to Project Summary","nonauthenticated":"Go to Login"},"title":"Oops, this page doesn’t exist","subtitle":"404 - NOT FOUND"},"loading":{"pageTitle":"ROQ Console"},"roq-accept-invite":"ROQ Accept Invite","roq-account-activate-provider-link":"ROQ - Account Activate Provider Link","activate-roq-account":"ROQ - Account activate","reset-password-page-title":"Forgot password","roq-one":"ROQ One","environment-details":{"title":"Environment Details","subTitle":"Here you find all environment-specific details that you need for connecting with the ROQ Platform API.\u003cbr /\u003eAlso, you can set up the integration with sendgrid which is needed for the mail feature.","tabs":{"overview":"Overview"},"action":{"edit":{"sendgrid":{"modal":{"title":"Edit Sendgrid Setting","subtitle":"You can change Sendgrid API key and From Email here.","success-feedback":"Sendgrid Configuration updated successfully","submit":"Save"},"tooltip":{"api-key":"Edit API key","from-email":"Edit from email"}}}},"section":{"download":{"action":{"clipboard-success":"Copied .env to clipboard","close":"Close","copy":"Copy to clipboard"},"title":"Get Environment Variables for connecting with this environment","subTitle":"Here you find all environment variables for ROQ One. You will need TENANT_ID, API_KEY and the HOST URL’s for connecting any other application."},"platform-sendgrid":{"title":"EMAIL PROVIDER","subtitle":"Our email feature is built on top of \u003c0\u003e{{email}}\u003c/0\u003e. Your own API Key and 'From Email' can be configured and will be used for sending emails."},"platform-api":{"title":"ROQ PLATFORM API","subtitle":"Use the below credentials for connecting to the ROQ Platform GraphQL API"}},"columns":{"name":"Name","value":"Value"}},"roq-cloud":"ROQ Cloud","access-and-user-management":{"title":"Access \u0026 User Management","tab":{"permissions":{"input":{"name":{"label":"Select Permission"},"permission-title":{"tooltip":"Role permission"},"remove-permission":{"tooltip":"Click to remove this permission"},"add-permission":{"disabled-tooltip":"There are no more permissions to add","tooltip":"Add a new permission"}}},"roles":{"input":{"remove-role":{"tooltip":"Click to unassign role"},"add-role":{"tooltip":"Add new role","disabled-tooltip":"You assigned all available roles","label":"Add role"},"summary":{"helper-text":"Summary of changes"},"name":{"label":"Role","name":"Name","helper-text":"Enter the custom Role name here"},"description":{"empty":"Select role","name":"Description","helper-text":"Enter the Role description here"}},"action":{"buttons":{"add-permission-cta":"Add Permission"},"delete":{"failure-due-to-being-assigned-message":"Could not delete the {{name}} role.","tooltip":{"system-managed":"It is not possible to delete system-managed roles.","user-group-error":"It is not possible to delete roles with related user group.","user-error":"It is not possible to delete roles with related user.","default":"Delete Role"},"success-message":"Successfully Deleted {{roleName}}","confirmation-modal":{"message":"Are you sure you want to delete the {{roleName}} role? This action can't be undone."}},"create":{"overlay":{"title":"Create Custom Role","sub-title":"create custom role and its permissions","success-feedback":"Role {{name}} created successfully","submit":"Create"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}},"view":{"label":"View Role","overlay":{"title":"View Role"},"tooltip":"View role"},"edit":{"overlay":{"title":"Edit Role","success-feedback":"Role {{name}} updated successfully","submit":"Save"},"tooltip":{"disabled":"It is not possible to update system-managed roles","default":"Edit role"}},"permissions":{"label":"Role permissions"}},"form":{"scope":{"all":"ALL","own":"OWN","user-group":"User Group","title":"Scope"},"user-group-type":{"label":"User Group Type"},"section":{"general":"Role details"}},"title":"Roles","validation":{"name":{"max":"Name must be lower than 255 characters","required":"This is a required field"},"description":{"max":"Description must be lower than 255 characters"},"permission":{"min":"A role must have atleast one permission"},"resolver-mapping":{"required":"This is a required field"},"scope":{"required":"This is a required field"},"user-group":{"required":"This is a required field"},"id":"This is a required field"},"column":{"key":"Key","name":"Name","type":"Type"},"create":{"label":"Create Custom Role"}},"group-sync":{"title":"Group Sync"},"user-groups":{"title":"User Groups","members":{"overlay":{"title":"Members of User Group: {{name}}","subtitle":"Here you can see all the users belonging to the {{name}} user group.","cancelBtn":"Close"},"table":{"title":"User Group Members","column":{"email":"Email","id":"ID"}}},"search":{"placeholder":"Search by name…"},"column":{"name":"Name","type":"Type","remoteId":"Remote Id","membersCount":"Members","roles":"List of Roles"},"action":{"edit":{"tooltip":"Update user group roles","overlay":{"title":"Update User Group Roles","submit":"Update"}}}},"users-and-roles":{"title":"Users and Roles","search":{"placeholder":"Search by email..."},"column":{"email":"Email","name":"Name","created-at":"Created At","roles":"List of Roles","user-groups":"User Groups"},"action":{"edit":{"tooltip":"Update user roles","overlay":{"title":"Update User Roles","submit":"Save"}}}}},"users-and-roles":{"user-groups":{"title":"User Groups for user: {{email}}","buttons":{"cancel":"Close"}}}},"chat":{"tab":{"chats":{"title":"Chats","filter":{"type":{"label":"Type","option":{"all":"All","direct":"Direct Chat","group":"Group Chat"}}},"column":{"type":"Type","created-at":"Created At","participants":"Participants"},"tooltip":{"type":"Chat type","created-at":"Date of chat creation","participants":"Participants","chat-owner":"Chat owner"}}},"title":"Chat","input":{"group-type":{"group":"Group Chat","direct":"Direct Chat"}}},"events":{"title":"Event","type":{"system-managed":"System Event","custom":"Custom Event"},"tab":{"event-types":{"title":"Event Types","column":{"type":" Event Type","name":"Event Name","last-occurrence":"Last Occurrence","occurrence-in-24-hours":"Number of occurrences in last 24 hours"},"action":{"view":{"overlay":{"tooltip":"View example payload","title":"Example of {{eventType}}","button":{"copy":{"message":"Copied event example data to clipboard","label":"copy to clipboard"}}}}}}}},"file-manager":{"title":"File Management"},"localization":{"title":"Localization","tab":{"translations":{"status":{"translated":{"translated":"Translated","untranslated":"Untranslated"}},"title":"Translations","search":{"placeholder":"Search by key or translation…"},"filter":{"translations":{"locale":{"label":"Locale"},"status":{"label":"Status","option":{"all":"All","translated":"Translated","untranslated":"Untranslated"}}}},"column":{"key":"Key","default":"Default Translation","translations":"Translation","status":"Status"},"action":{"translate":{"tooltip":"Translate key","overlay":{"title":"Translate Keys","subtitle":"Enter translations for the key for different locales","success-feedback":"Successfully translated keys","buttons":{"submit":"Save"}},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel-label":"Cancel","confirm-label":"Leave"}}},"input":{"key":{"name":"Key","placeholder":"Key"},"value":{"placeholder":"Type translation here…"}}},"locales":{"title":"Locales","column":{"locale":"Locale"},"action":{"add":{"label":"Add Locale","overlay":{"title":"Add Locale","subtitle":"Add a Locale to this environment","success-message":"Successfully added locale to the environment","buttons":{"submit":"Create"}},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel-label":"Cancel","confirm-label":"Leave"},"fieldset":{"default-checkbox-label":"Set As Default (This will overwrite any other default locale)"}},"edit":{"tooltip":"Edit locale","overlay":{"title":"Edit Locale","subtitle":"Edit an existing Locale on this environment","success-message":"Successfully updated {{name}}","buttons":{"submit":"Save"}},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel-label":"Cancel","confirm-label":"Leave"}},"delete":{"tooltip":"It is not possible to delete default locale for the environment","default-tooltip":"Delete locale","success-message":"Successfully Deleted {{locale}}","confirmation-modal":{"message":"Are you sure you want to delete this locale {{locale}} ? This action can't be undone."}}}},"keys":{"title":"Keys","list-view-title":"Available Keys","action":{"add":{"label":"Create Key","overlay":{"title":"Create Key","subtitle":"Create the new key","success-message":"Successfully created '{{translationKey}}' key","buttons":{"submit":"Create"}},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel-label":"Cancel","confirm-label":"Leave"},"fieldset":{"key-label":"Key","value-label":"Translation (Default Locale)","value-placeholder":"Type default translation here"}},"edit":{"tooltip":"Edit key","overlay":{"title":"Edit Key","subtitle":"Edit a key and it's default translation","success-message":"Successfully updated '{{translationKey}}' key","buttons":{"submit":"Edit Key"}},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel-label":"Cancel","confirm-label":"Leave"}},"delete":{"tooltip":"Delete key","success-message":"Successfully Deleted {{translationKey}}","confirmation-modal":{"message":"Are you sure you want to delete '{{translationKey}}' key? This action can't be undone."}}}}}},"notification":"Notifications","project-summary":{"title":"Project Summary","items":{"applications":{"columns":{"environment":"Environment","status":"Status","application-url":"Application URL"},"title":"Applications"}},"section":{"summary":{"label":{"environment":"Environment","status":"Status"},"title":"Summary"}}},"settings":{"sub-menu":{"project":{"title":"Project","sub-title":"Project Details","input":{"name":{"label":"Project Name","placeholder":"Enter project name"}},"update":{"success":"Project details updated successfully"}},"account":{"title":"My Account","sub-title":"My Account Details","input":{"first-name":{"label":"First Name","placeholder":"Enter first name"},"last-name":{"label":"Last Name","placeholder":"Enter last name"}},"update":{"success":"Account details updated successfully"}},"organization":{"title":"Organization","sub-title":"Organization Details","input":{"name":{"label":"Organization Name","placeholder":"Enter organization name"}},"update":{"success":"Organization details updated successfully"}},"team":{"title":"Team","members":{"action":{"delete":{"tooltip":{"owner":"You cannot remove your organization owner.","myself":"You cannot remove your own user from the organization.","common":"Click to remove member"},"confirmation-modal":{"message":"Are you sure you want to delete this member?"},"success-feedback":"Member {{name}} removed"}},"title":"Members","column":{"email":"Email","name":"Name","status":"Status"},"input":{"is-owner":{"active":"Owner"}}}}},"title":"Settings"},"onboarding-survey":"Onboarding Survey","register":{"title":"Register","form":{"title":"Create your ROQ Account"}},"roq-reset-password":"ROQ - New Password","title_settings":"Settings","mail":{"title":"Mails","input":{"mail-type":{"empty":{"title":"No Mail Types exists","subtitle":"Once you create at least one mail type, you can select the mail type you want to use here."},"label":"Mail Type","placeholder":"Select Mail Type"}},"tab":{"mail-types":{"title":"Mail Types"}}},"notification-type-channel-web-localized-already-exists":"Localized template for locale {{locale}} already exists","toggle-theme":"Light/Darkmode","account":"Account","log-out":"Sign out","feature-as-a-service":"Features \u0026 Configuration","layout":{"main":{"header":{"navigation":{"drodpown":{"environment":{"label":"Environments","placeholder":"Select Environment"}}}}}},"project":"Project","project_plural":"Projects","roles":{"input":{"role-type":{"system-managed":"System Managed Role","custom":"Custom Role","empty":"N/A"}}},"form-status":{"confirm":"You currently have unsaved changes.\nAre you sure you want to leave?"},"action-overlay":{"close-confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}},"input":{"password":{"placeholder":"Password (Min {{min}} chars)","validation":{"required":"Password is a required field","all-spaces":"Password must not contain only spaces","char-limit":"Password must have characters between 4 and 64"}},"confirm-new-password":{"validation":{"required":"You need to re-enter the new password","mismatch":"Passwords do not match"},"placeholder":"Re-enter new password"},"system-key":{"validation":{"required":"Key is a required field","min-max":"Key should be between 4 to 255 characters","upper-char-required":"This input only accepts uppercase letters, numbers and underscores"}},"sendgrid-api-key":{"name":"Api Key","validation":{"required":"Api Key is a required field"}},"sendgrid-from-email":{"name":"From Email","validation":{"type":"From Email (Sender Email) must be a valid Email","required":"From Email (Sender Email) is a required field"}},"email":{"validation":{"type":"Email must be valid email address","required":"Email is a required field"},"name":"Email address","placeholder":"Email"},"company-name":{"validation":{"required":"Organization name is required","min-length":"Organization name should be longer than {{min}} characters","max-length":"Organization name cannot be longer than {{max}} characters","invalid-format":"Organization name should only contain alphabets, numbers, spaces, hyphens and underscores"},"name":"Company Name (optional)"},"project-name":{"validation":{"required":"Project name is required","min-length":"Project name should be longer than {{min}} characters","max-length":"Project name cannot be longer than {{max}} characters","invalid-format":"Project name should only contain alphabets, numbers, spaces, hyphens and underscores"}},"set-password":{"placeholder":"Set password"},"confirm-password":{"placeholder":"Confirm password"},"locale":{"validation":{"required":"Locale is required"},"label":"Select Locale"},"first-name":{"name":"First Name","validation":{"required":"First name is a required field","max-length":"First name cannot be longer than {{max}} characters"}},"last-name":{"name":"Last Name","validation":{"max-length":"Last name cannot be longer than {{max}} characters","required":"Last name is a required field"}},"translation":{"validation":{"length":"Key should be between 3 and 255 characters","required":"Key is a required field"}},"login-password":{"placeholder":"Password"},"current-password":{"placeholder":"Enter current password"},"new-password":{"placeholder":"Enter new password (Min {{min}} chars)"},"terms-and-conditions":{"required":"You need to accept terms \u0026 conditions and privacy policy"}},"password-validation-base-text":"Your password must:","already-registered":"Already have an account?","not-registered-yet":"Don't have an account yet?","go-to-login":"Go To Login","go-to-registration":"Go to Registration","sso":{"provider":{"google":"Google","google_sign-in":"Sign in with Google","google_sign-up":"Sign up with Google"}},"title_home":"ROQ One Home","title_typography":"Typography","title_profile":"User profile","title_users":"Users","title_invites":"Invites","chip-status":{"active":"Active","inactive":"InActive","invited":"Invited"},"confirmation-modal":{"message":{"default":"Changes that you made might not be saved."},"buttons":{"cancel":{"label":"Cancel"},"confirm":{"label":"Leave"}}},"clipboard-success":"Copied URL to clipboard","link-text":{"imprint":"Imprint","terms":"Terms \u0026 Conditions","privacy":"Privacy Notice","data-preference":"Data Preferences"},"file-size_unit":"file-size_unit","file-size_byte":"B","file-size_kilobyte":"KB","file-size_megabyte":"MB","file-size_gigabyte":"GB","file-size_terabyte":"TB","file-size_petabyte":"PB","file-size_exabyte":"EB","file-size_zettabyte":"ZB","file-size_yottabyte":"YB","no-records":"No records to display","pagination":{"displayed-rows-range":"{from}-{to} of {count}","rows-per-page":"Rows per page:"},"rows":"Rows","i18nKey":"i18nKey","each":"each","integrate-sendgrid":{"cta":"Integrate Sendgrid","warning-message":"We currently use the sendgrid API for delivering emails. Please make sure to integrate your sendgrid account.","see-docs-cta":"See instructions"},"get-env-btn":"Get .Env Config","upgrade-environment":{"modal":{"message":"You have reached the {{subscriptionPlan}} plan's limit of {{count}} ROQ platform {{environment}} environment","message_plural":"You have reached the {{subscriptionPlan}} plan's limit of {{count}} ROQ platform {{environment}} environments","production":"For using ROQ Platform in production, a subscription is required","feedback":{"description":"We'll get in touch with you to find a package that suits your needs","question-label":"Have questions or comments?","chat-cta":"Chat with us","title":"Thanks for your interest in upgrading your plan","close-button-label":"Close"},"title":"New Environment","submit-button-label":"Upgrade","message_one":"You have reached the {{subscriptionPlan}} plan's limit of {{count}} ROQ platform {{environment}} environment"}},"create-environment":{"button":{"label":{"dev":"Create Environment","prod":"Enable"}},"modal":{"fields":{"name":{"label":"Name","validation":{"length":"Environment name must have between 2 and 24 characters","invalid-format":"Environment name should only contain alphanumeric, hyphen and underscore"}}},"title":"Create New Environment","success-feedback":"Environment Created Successfully","submit-button-label":"Create Environment"}},"import-platform-seed-poll":{"started":"Seeding for environment {{name}} has started","success":"Seeding for environment {{name}} completed successfully","failed":"Seeding for environment {{name}} failed"},"file-management":{"tab":{"file-categories":{"input":{"content-type":{"label":"Select content types","validation":{"required":"There should be atleast one content type"}},"name":{"validation":{"required":"Name is a required field"},"name":"Name","label":"Name for the File Category, only visible in Cockpit"},"key":{"validation":{"required":"Key is a required field"},"name":"Key","label":"This key will be used in request to ROQ platform"},"maxSize":{"validation":{"required":"Max file size is a required field","max":"Size must not be greater than 5 TB"},"name":"Max file size","dropdownName":"Unit","label":"Max file size allowed for category"}},"menu":"Categories","subTitle":"Create a file category for defining validation policies including max file size and allowed content types. \u003cbr /\u003e\u003c1\u003eRead more on how to use the file management system ↗️\u003c/1\u003e","title":"All Categories","empty":{"title":"No File Categories configured yet","subTitle":"Once you configure a File Category, you will see it here."},"tooltip":{"name":"Name of the category","key":"Use this key for creating file upload URL's or to fetch files of a specific category","max-size":"File uploads will be validated against this file size","file-types":"File uploads will be validated against these file types"},"column":{"key":{"clipboard-success":"Copied key to clipboard"}},"action":{"create":{"title":"create category","overlay":{"title":"Create category","subtitle":"Create new category by selecting options","success":"Successfully created {{name}}","submit":"Create"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}},"edit":{"tooltip":"Edit category","overlay":{"title":"Update category","subtitle":"Update given category","success":"Successfully updated {{name}}","submit":"Save"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}},"delete":{"tooltip":"Delete category","confirmation-dialog":{"message":"The deletion of this file category might break functionality on your application. User will not be able to upload files with key {{fileCategoryKey}} on environment {{environmentName}}"},"success-feedback":"File Category deleted successfully"}},"section":{"name":{"title":"Name"},"file-size":{"title":"Choose maximum file size"},"content-types":{"title":"Limit allowed file content types"}}},"files":{"menu":"Files","file-associations":{"title":"File Associations","column":{"identifier":"Identifier","name":"Name"}},"title":"All Files","column":{"content-type":"Content Type","created-by":"Created By","category":"Category","status":"Status","visibility":{"title":"Visibility","is-public":"public","is-private":"private"}},"action":{"view":{"title":"View File","overlay":{"title":"View File","subtitle":"View File Details with their associations"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}}},"input":{"name":{"helper-text":"The name of the file"},"contentType":{"helper-text":"The content type of the file"},"createdAt":{"helper-text":"The details about when the file was created"},"createdByUserId":{"helper-text":"The id of the user who created this file"},"fileCategoryName":{"helper-text":"The name of the file category to which this file belongs"},"status":{"helper-text":"The current status of the file"},"isPublic":{"helper-text":"Whether the file is public or private"}}}}},"file-category-name":"File Category Name","format":"format","password_unmask":"Show Password","password_mask":"Hide Password","form":{"step":{"back":"Back","finish":"Finish","next":"Next"}},"invites":{"action":{"invite":{"label":"Invite Team Members","input":{"members":{"placeholder":"Email, comma separated"}},"modal":{"title":"Invite Team Members to {{name}}","success-feedback":"Members successfully invited","buttons":{"submit":"Send Invitation"}}}}},"list-view":{"search":{"placeholder":"Search…"},"actions":{"delete":{"tooltip":"Click to Delete","success-feedback":"Deleted sucessfully","confirmation-modal":{"message":"Delete"}},"edit":{"tooltip":"Click to Edit"},"modal":{"tooltip":"list-view.actions.modal.tooltip","success-feedback":"list-view.actions.modal.success-feedback","confirmation-modal":{"message":"list-view.actions.modal.confirmation-modal.message"}},"view":{"tooltip":"Click to View"}}},"remove-filters":"Remove Filters","add-filters":"Add Filters","action-column-title":"Controls","languages":{"full_en-US":"English (USA)","full_de-DE":"German","full":"languages.full","short_en-US":"EN (US)","short_de-DE":"DE","short":"languages.short"},"default":"Default","mail-type-localized-template":{"input":{"locale":{"label":"Locale","helper-text":"You can select locale for the localized template here","validation":{"required":"Locale is required field"}},"template":{"validation":{"required":"Template is required field"},"label":"Template","placeholder":"Start building your template","helper-text":"You can create your template here"},"subject":{"validation":{"required":"Subject is required field","min-max":"Subject should be between 4 to 255 characters"},"label":"Subject","helper-text":"You can place you mail subject here"},"preview":{"label":"Preview","helper-text":"Preview of your template"}},"menu":"Localized Templates","column":{"locale":"Locale","subject":"Subject","template":"Template"},"action":{"create":{"title":"Create Localized Template","overlay":{"title":"Create Localized Template","subtitle":"Create new Localized Template","success":"Successfully created {{selectedKey}} template","submit":"Create"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}},"edit":{"tooltip":"Edit localized template","overlay":{"title":"Update Localized Template","subtitle":"Update Localized Template","success":"Successfully updated {{selectedKey}}","submit":"Save"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}},"delete":{"tooltip":"Delete localized template","confirmation-modal":{"title":"Confirm Deletion","message":"Are you sure you want to remove this localized template. This action can't be undone."},"overlay":{"success":"Localized Template deleted successfully"}}}},"notifications":{"tab":{"notification-types":{"input":{"category":{"label":"Category","empty-placeholder":"There is no categories created","helper-text":"You can select a category of the notification type here","validation":{"required":"Category is a required field"}},"channel":{"web":{"localized-template":{"locale":{"validation":{"required":"Locale is a required field"}},"title":{"validation":{"required":"Title is a required field"},"name":"Title","label":"The static name of template"},"icon":{"validation":{"required":"Icon is a required field"},"label":"This icon will be used in the system"},"content":{"validation":{"required":"Content is a required field"},"name":"Content","label":"You can place a content of the template here"}},"label":"Web (In-App)","button":"Configure"},"enabled":{"name":"Active","tooltip":"If this is On, ROQ platform users can receive notifications via this channel","label":"Enable/Disable"},"default":{"name":"Default User Preference","tooltip":"New ROQ platform users will be opted in to this channel by default. Otherwise, they will need to be opted-in explicitly.","label":"Enable/Disable"},"email":{"label":"Email","button":"Configure"}},"key":{"label":"Key","helper-text":"This key will be used in request to ROQ platform"},"description":{"label":"Description","helper-text":"You can place a description of the notification type here"},"status":{"label":"Enable/Disable","helper-text":"You can change status of the notification type here"}},"title":"Types","action":{"configuration":{"channel":{"email":{"overlay":{"title":"Channel Configuration: Email","success-feedback":"Channel updated successfully","cancel":"Back"},"title":"Mail Type","input":{"manage":{"subtitle":"Mail Types are not managed here as they can be re-used by multiple notification types.","button":"Manage Mail Types \u0026 Templates"}},"not-ready":"Select Mail Type to perform initial channel setup"},"web":{"title":"Localized Templates","column":{"locale":"Locale","icon":"Icon","title":"Title","content":"Content"},"action":{"create":{"title":"Create Localized Template","overlay":{"title":"Create Localized Template","subtitle":"Create new template","success":"Successfully created","submit":"Create"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}},"edit":{"tooltip":"Edit localized template","overlay":{"title":"Edit Localized Template","subtitle":"Edit new template","success":"Successfully updated","submit":"Save"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}},"delete":{"tooltip":"Delete Localized Template","confirmation-modal":{"title":"Confirm Deletion","message":"Are you sure you want to remove this localized template. This action can't be undone."},"overlay":{"success":"Localized Template deleted successfully"}}},"overlay":{"title":"Channel Configuration: In-App","cancel":"Back","success-feedback":"Channel updated successfully"},"error":"There was an error fetching In-App channel configurations"}}},"edit":{"tooltip":"Edit type","overlay":{"title":"Edit Type","subtitle":"Edit Notification Type","success":"Successfully updated {{selectedKey}}","submit":"Configure"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}},"delete":{"tooltip":"Delete type","confirmation-modal":{"title":"Confirm Deletion","message":"Are you sure you want to remove this notification type. This action can't be undone."},"overlay":{"success":"{{deletedKey}} deleted successfully"}},"create":{"title":"Create Type","overlay":{"title":"Create Type","subtitle":"Create new Type","success":"Successfully created {{selectedKey}}","submit":"Create Type \u0026 Configure Channels"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}}},"menu":"Notification Types","column":{"key":"Key","description":"Description","status":"Status","category":"Category","default-user-active-web":"In-App Default Preference","default-user-active-mail":"Email Default Preference","notification-type-channel-web-is-active":"Channel: Web","notification-type-channel-mail-is-active":"Channel: E-Mail"},"section":{"channels":{"title":"Channels","description":"You can configure message templates for each channels individually."}}},"notification-categories":{"title":"Categories"},"notification-logs":{"title":"Notification Logs","subtitle":"Please note that we don't show delivered emails here yet. Please visit your mail provider for that.","column":{"notification-type":"Notification Type","title":"Title","locale":"Locale","email":"Email"},"action":{"view":{"title":"Notification","overlay":{"title":"Notification Log"},"buttons":{"cancel":"Close"},"section":{"notification":{"field":{"notification-type":"Notification Type","title":"Title","icon":"Icon","locale":"Locale","created-at":"CreatedAt","channel":"Channel","content":"Content"}},"receiver":{"title":"Receiver","fields":{"id":"Id","name":"Name","email":"Email"}}}}}}},"title":"Notifications"},"accept-invite":{"title":"Confirming Invitation","something-went-wrong":"Oh, Something went wrong","error-description":"Your invite email is not valid anymore. Please contact your organization owner for receiving a new invite","confirmed":"Invitation Confirmed"},"invite-accepted-text":"Invite accepted successfully","agree-to-receive-communications-by-email-from-roq":"I agree to receive communications by email from ROQ","create-account-cta":"Create Account","access-denied":{"pageTitle":"Access denied","title":"Access denied","subtitle":"You don’t have access to this resource","action":"Go to Project Summary"},"confirm-account-provider-link":"Confirm provider link to account","invalid-link-text":"Link is invalid","provider-linked-account-verified":"Provider link to account verified","sign-in":"Sign in","application-text":{"step-1":{"title":"Step 1 - Get your own copy of ROQ One","one":"ROQ One is published as open source. You can find the public repository here:","one-link":"➚github.com/roqtech/roq-one","one-2":"To get a local copy of ROQ One code, you need to run this command in your workspace or download the source code directly from Github."},"step-2":{"title":"Step 2 - Connect your ROQ One to the ROQ Features API","content-1":"In the new directory, you'll find the","content-2":"frontend","content-3":"and the","content-4":"backend","content-5":"application of ","content-6":"ROQ One","content-7":". To install it you need to create an ","content-8":".env","content-9":"file in the root directory and copy\u0026paste the credentials that you get in the console:","content-10":"➚console.roq.tech/details","sub-content-1":"Recommended - ","sub-content-2":"Or you can just click on the following button and get your copy of .env with necessary API information already filled up for you. Please download this file into the same folder where you downloaded your ROQ One code.","cta":"Download .env"},"step-3":{"title":"Step 3 - Run installation scripts","one":"Now you can run the command below. Make sure that ","two":" ➚Docker","three":"is installed and running on your computer because it's used to provision the database. Also, it’s important that there are no local Postgres DBs running.","four":"As an alternative to the docker-compose command, you can also run:","five":"In this case, you need to make sure that you are using Docker Compose V2:"},"step-4":{"title":"Step 4 - Open your ROQ ONE application in the browser","five":"Woohoo! Congratulations !!! 🎉 🎉 🎉","one":"If everything went well, your application is running and you can access it with your browser or GraphQL API interface","two":"When the script is done running then you can open the applications using the addresses below:","three":"ROQ One Frontend","four":"ROQ One Backend","six":"Now it's time to start modifying and building your next awesome web application. Good luck! 🚀 🚀 🚀"},"step-5":{"title":"Step 5 - For troubleshooting","one":"We hope you won't encounter any issues while installing ROQ One, but in case you will we are sorry!","three":"To unblock yourself, you can do the following:","four":"Dig deeper into the setup -\u003e please visit the following","two":"link:","five":"Contact us using the chat button in the bottom right of this page, and we will help you."},"main-content":"Welcome to the ROQ One Web Application page. We want to help you download, install and locally run your version of ROQ One.","main-sub-content":"ROQ One is ready to use Kickstarter application that is integrated with ROQ Features-as-a-Service out of the box. ROQ One consists of frontend and backend parts:","main-sub-content-1":"Frontend gives you a client-side application that offers a modern and responsive user interface based on SaaS best practices.","main-sub-content-2":"Backend is your server-side application that holds the API, business logic, and persistence layer.","main-content-2":"Pre-requisites for completing these steps successfully are:","main-content-git":"GIT installed","main-content-git-link":"Git - Installing Git","main-content-npm":"NPM installed","main-content-npm-link":"How to install Node.js","main-content-docker":"Docker installed","main-content-docker-link":"Get Docker","main-content-end":"After installing pre-requisites, you are ready to follow ROQ One Installation Tutorial","tutorial":"ROQ One Tutorial:","sub-faq-title":"In case you have any additional questions, feel free to","sub-faq-title-link":"contact us"},"platform-environment-variable":{"platform-gateway-url":"API URL","socket-gateway-url":"Socket URL","tenant":{"label":"Tenant ID","copy-success-message":"Copied Tenant Id to clipboard"},"api-key":{"label":"API Key","copy-success-message":"Copied API Key to clipboard"},"sendgrid-api-key":{"label":"API Key","copy-success-message":"Copied Sendgrid API Key to clipboard"},"from-email":{"label":"From Email","copy-success-message":"Copied Sendgrid From Email to clipboard"}},"max-size":"Max Size","file-types":"File Types","reset-password-email-sent":"Resent successfully","reset-password-mail-sent-text":"We will send an email to {{email}} if there’s a match.","send-instructions":"Send Reset Password Email","reset-password":"We will send you an email with instructions on how to reset your password.","group-sync":{"input":{"entity":{"validation":{"required":"Entity is required","invalid-format":"Entity has invalid format"},"label":"Entity","placeholder":"EmployeeEntity or AccountEntity","helper-text":"The name of the entity on roq-one side"},"user-group-type":{"validation":{"required":"User Group Type is required","invalid-format":"User Group Type has invalid format"},"label":"User Group Type","placeholder":"User or Account","helper-text":"The type of user group"},"type":{"validation":{"required":"Relationship Type is required"},"label":"Relationship Type","option":{"belongs-to":"Belongs To","is-a":"Is A"}},"user-relation-entity-type":{"validation":{"invalid-value":"user-group-config.input.user-relation-entity-type.validation.invalid-value","invalid-multi-value":"This option is not valid for user in multiple groups"},"label":"User Relation Entity","option":{"user-id-exists-on-entity":"the ID of the User is set on the entity","user-has-entity-id":"The Entity Id is set on the user"}},"name":{"validation":{"required":"Name is requried","invalid-format":"Name has invalid format"},"label":"Name","placeholder":"Employee","helper-text":"The static name of user group"},"name-field":{"validation":{"required":"User Group Name is requried","invalid-format":"User Group Name has invalid format"},"label":"User Group Name Field","placeholder":"Customer ABC","helper-text":"The dynamic name of the user group"},"user-in-multiple-groups":{"validation":{"required":"user-group-config.input.user-in-multiple-groups.validation.required"}},"user-relation-field":{"validation":{"required":"User Relation Field is requried","invalid-format":"User Relation Field has invalid format"},"label":"User Relation Field","placeholder":"Name of field","helper-text":"In which field is the relevant Id stored?"},"pivot-table-name":{"validation":{"required":"Pivot Table Name is requried","invalid-format":"Pivot Table Name has invalid format"},"label":"Pivot Table Name","placeholder":"Table Name","helper-text":"How does is the user associated with the entity?"},"group-relation-field":{"validation":{"required":"Group Relation Field is requried","invalid-format":"Group Relation Field has invalid format"},"label":"Group Relation Field","placeholder":"Name of field","helper-text":"EntityId field name from pivot table"},"is-user-in-multiple-groups":{"label":"Users can be in multiple groups of the same User Group Type?"}},"column":{"entity":"Entity","user-group-type":"User Group Type","type":"Type","name":"Name","name-field":"Name Field"},"action":{"create":{"name":"Create Group Sync","overlay":{"title":"Create Group Sync","subTitle":"Create new Group Sync","success":"Successfully created {{name}}","submit":"Create"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}},"edit":{"overlay":{"title":"Update Group Sync","success-feedback":"Group Sync is updated successfully","submit":"Save"},"tooltip":{"disabled":"It is not possible to edit a group sync for a user group that has members","default":"Edit group sync"}},"delete":{"confirmation-modal":{"message":"Are you sure you want to remove this Group Sync? This action can't be undone."},"success-feedback":"Group Sync Configuration deleted successfully","tooltip":{"disabled":"It is not possible to delete a group sync for a user group that has members","default":"Delete group sync"}}},"form":{"section":{"general":"General Information","relationship":"Relationships"}}},"default-roles":"Default Roles","resend-invite-success-message":"A new invite was sent","resend-invite-error":"The invite could not be sent. Please try later","resend-invite":"Resend Invite","cancel":"cancel","save":"Save","edit":"Edit","password-section-title":"Password","reset-password-button":"Reset Password","change-password-success":"Password is changed successfully","sso-disconnect":"Disconnect","notification-mail-type":{"menu":"Notification Mail Types","column":{"key":"Key","description":"Description"},"action":{"create":{"title":"Create Mail Type","overlay":{"title":"Create Mail Type","subtitle":"Create new Mail Type","success":"Successfully created {{selectedKey}} and configured templates","submit":"Create Mail Type \u0026 Configure Templates"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}},"edit":{"tooltip":"Edit mail type","overlay":{"title":"Edit Mail Type","subtitle":"Edit Notification Mail Type","success":"Successfully updated {{selectedKey}}","submit":"Save"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}}},"input":{"key":{"label":"Key","helper-text":"This key will be used in request to ROQ platform"},"description":{"label":"Description","helper-text":"You can place a description of the notification mail type here"}}},"notification-type-category":{"menu":"Notification Categories","columns":{"key":"Key","description":"Description"},"action":{"create":{"title":"Create category","overlay":{"title":"Create category","subtitle":"Create new category","success":"Successfully created {{selectedKey}}","submit":"Create"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}},"edit":{"tooltip":"Edit category","overlay":{"title":"Update category","subtitle":"notification-type-category.action.edit.overlay.subtitle","success":"Successfully updated {{selectedKey}}","submit":"Save"},"confirmation-modal":{"title":"Leave Form?","message":"Changes that you made might not be saved.","cancel":"Cancel","confirm":"Leave"}},"delete":{"tooltip":"Delete category","confirmation-modal":{"title":"Confirm Deletion","message":"Are you sure you want to remove this notification category. This action can't be undone."},"overlay":{"success":"{{deletedKey}} deleted successfully"}}},"input":{"description":{"validation":{"required":"Description is a required field","min-max":"Description should be atleast 4 characters"},"name":"Description","label":"You can place a description of the notification category here"},"key":{"name":"Key","label":"This key will be used in request to ROQ platform"}}},"private-demo":{"error":{"application-creation":"Failed to create your application","project":"Failed to create a project and environment for your application."},"step":{"project-creation":"Creating Project...","env-creation":"Creating Platform Env (Tenant)...","provisioning-application":"Provisioning your application...","injecting-env-vars":"Integrating Application with ROQ Platform via env vars...","deploying-backend-application":"Deploying the backend of your application...","deploying-frontend-application":"Deploying the frontend of your application..."},"deployed":{"text":"Your app is live on \u003c0\u003e{{applicationUrl}}\u003c/0\u003e","title":"Hooray the deployment is done!"},"title":"Setting up your private demo"},"environment-status":"environment-status","environment-status-info":"environment-status-info","go-to-project-summary":"Go to Project Summary","environment-status_in_progress":"In Progress","environment-status_error":"Error","environment-status_done":"Active","environment-status_seeding_failed":"Seeding failed","environment-status-info_in_progress":"The creation of this environment is currently in progress","environment-status-info_seeding_failed":"The seeding of configuration data for ROQ One failed for this environmnent. We are investigating this problem.","environment-status-info_error":"There was an error creating the environment","resend-email-verification-success":"Verification Email Resent","confirm-mail-text":"Confirm your email","registration-mail-sent-text":"We've sent you an email to \u003cstrong\u003e{{email}}\u003c/strong\u003e\u003cbr /\u003eClick on the link there to continue your registration.","mail-not-received-text":"Didn't receive an email?","resend-email-cta":"Resend Email","reset-password-cta":"Send","reset-password-title":"New Password","invalid-reset-link":"Your password reset link is invalid or expired","request-new-link":"Get New Link","roq-cloud-text":{"run-local":{"title":"How can I run my ROQ One web application locally?","one":"Please visit the following page for instructions.","title-cta":"GET ROQ ONE"},"deploy-test":{"title":"Can I deploy my development/test version of ROQ One web application to ROQ Cloud?","one":"ROQ Cloud is currently in BETA and used by a limited amount of ROQs customers in production. If you would like to join the BETA cohort, please contact us using","title-cta":"this form."},"deploy-production":{"title":"Can I deploy my production-ready version of ROQ One web application to ROQ Cloud?","one":"To help you go live with ROQ, you should first talk to use. Please contact us using this form or use the chat at the bottom left of this page.","title-cta":"this form","two":"or use the chat at the bottom left of this page."},"other-cloud":{"title":"Can I deploy my development/test version of ROQ One web application on any other cloud provider platform?","one":" It is possible to deploy your test ROQ ONE application to popular hosting platforms, but you might encounter some problems in terms of configuration. Instead, we recommend","title-cta":"to contact us and join BETA."},"header-button":"IN CLOSED BETA","main-content":"Welcome to ROQ Cloud. We are currently in BETA - building the toolset that allows you to easily host, manage, and deploy your ROQ web applications. Meanwhile, you can check out our future vision for","main-content-link":"ROQ Cloud","main-content-2":"or visit our FAQ section below.","submain-content":"To join the BETA testing of ROQ Cloud, feel free to","submain-content-link":"fill out this form.","sub-faq-title":"In case you have any additional questions feel free to","sub-faq-title-link":"contact us"},"settings-section-title":"Language \u0026 Timezone","timezone-label-text":"Select your timezone","settings-update-success":"Settings successfully updated","confirm-account":"Confirm Account","email-confirmation-error":"Your email confirmation link is invalid or already expired","account-verified":"Your account is verified successfully","environment-status_disabled":"Disabled","environment-status-info_disabled":"Click Enable to activate the production environment","title_invite-new-user":"Invite new user","notification_mark-as-unread":"Mark as unread","notification_mark-as-read":"Mark as read","notification_mark-all-as-read":"Mark all as read","title_edit-user":"Edit User {{id}}","title_edit-user-invite":"Edit User Invite {{id}}","file-category-name_image":"Images","file-category-name_application":"Documents","file-category-name_text":"Texts","file-category-name_video":"Videos","file-category-name_message":"Messages","file-category-name_multipart":"Multiparts","file-category-name_audio":"Audios","file-category-name_model":"Models","file-category-name_font":"Fonts","title_files":"Files","title_message-center":"Message center","title_edit-user-file":"Edit File {{id}}"}}},"userConfig":{"i18n":{"defaultLocale":"en","locales":["en"],"defaultLanguage":"en","fallbackLng":["en"],"defaultNS":"common"},"localeMapping":{"en":"en-US"},"default":{"i18n":{"defaultLocale":"en","locales":["en"],"defaultLanguage":"en","fallbackLng":["en"],"defaultNS":"common"},"localeMapping":{"en":"en-US"}}}}},"segmentKey":"UmUc6KgoNiC26yYhu6lMbYZVPdGwg9PW","__N_SSP":true},"page":"/login","query":{},"buildId":"Tv7AgnWFQO3YRDl1agdUr","isFallback":false,"gssp":true,"appGip":true,"locale":"en","locales":["en"],"defaultLocale":"en","scriptLoader":[]}</script>
+</body>
 
-    </body>
+
 </html>
