@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/light-apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/light-favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/light-favicon-16x16.png">
+    <link rel="manifest" href="/favicon/light/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/light/safari-pinned-tab.svg" color="#1f2b48">
+    <link rel="shortcut icon" href="favicons/light-favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="ROQ">
+    <meta name="application-name" content="ROQ">
+    <meta name="msapplication-TileColor" content="#fffdf5">
+    <meta name="msapplication-config" content="/favicon/light/browserconfig.xml">
+    <meta name="theme-color" content="#1f2b48">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+    <title>ROQ - Build web applications faster than ever</title>
+    <meta name="title" content="ROQ - Build web applications faster than ever">
+    <meta name="description"
+        content="Start building your next web application immediately. Code your business logic on top of a powerful kickstarter app with all essential features you need. ">
+    <meta name="image" content="https://www.datocms-assets.com/62402/1644953587-logo_og-image-white-on-dark.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ROQ - Build web applications faster than ever">
+    <meta name="twitter:description"
+        content="Start building your next web application immediately. Code your business logic on top of a powerful kickstarter app with all essential features you need. ">
+    <meta property="twitter:image"
+        content="https://www.datocms-assets.com/62402/1644953587-logo_og-image-white-on-dark.png">
+    <meta property="og:title" content="ROQ - Build web applications faster than ever">
+    <meta property="og:description"
+        content="Start building your next web application immediately. Code your business logic on top of a powerful kickstarter app with all essential features you need. ">
+    <meta property="og:image" content="https://www.datocms-assets.com/62402/1644953587-logo_og-image-white-on-dark.png">
+    <meta property="og:type" content="website">
+    <meta name="keywords" content="">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preload" as="image"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668172605-hero-home_dark.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668172605-hero-home_dark.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668172605-hero-home_dark.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668172605-hero-home_dark.svg&amp;w=1440&amp;q=75 1440w"
+        imagesizes="100vw">
+    <link rel="preload" as="image"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668395008-hero-login_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668395008-hero-login_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668395008-hero-login_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668395008-hero-login_light.svg&amp;w=1440&amp;q=75 1440w"
+        imagesizes="100vw">
+    <link rel="preload" as="image"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394853-hero-usermanagement_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394853-hero-usermanagement_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394853-hero-usermanagement_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394853-hero-usermanagement_light.svg&amp;w=1440&amp;q=75 1440w"
+        imagesizes="100vw">
+    <link rel="preload" as="image"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394866-hero-usergroups_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394866-hero-usergroups_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394866-hero-usergroups_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394866-hero-usergroups_light.svg&amp;w=1440&amp;q=75 1440w"
+        imagesizes="100vw">
+    <link rel="preload" as="image"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394902-hero-accessmanagement_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394902-hero-accessmanagement_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394902-hero-accessmanagement_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394902-hero-accessmanagement_light.svg&amp;w=1440&amp;q=75 1440w"
+        imagesizes="100vw">
+    <link rel="preload" as="image"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394914-hero-files_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394914-hero-files_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394914-hero-files_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394914-hero-files_light.svg&amp;w=1440&amp;q=75 1440w"
+        imagesizes="100vw">
+    <link rel="preload" as="image"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394927-hero-notifications_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394927-hero-notifications_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394927-hero-notifications_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394927-hero-notifications_light.svg&amp;w=1440&amp;q=75 1440w"
+        imagesizes="100vw">
+    <link rel="preload" as="image"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394965-hero-chat_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394965-hero-chat_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394965-hero-chat_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394965-hero-chat_light.svg&amp;w=1440&amp;q=75 1440w"
+        imagesizes="100vw">
+    <link rel="preload" as="image"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=48&amp;q=75 2x">
+    <link rel="preload" as="image"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394951-hero-translation_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394951-hero-translation_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394951-hero-translation_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394951-hero-translation_light.svg&amp;w=1440&amp;q=75 1440w"
+        imagesizes="100vw">
+    <meta name="next-head-count" content="38">
+    <link rel="preload" href="/_next/static/css/637f67be6253dca9.css" as="style">
+    <link rel="stylesheet" href="css/css-637f67be6253dca9.css" data-n-g="">
+    <link rel="preload" href="/_next/static/css/9912ea04fb088eb1.css" as="style">
+    <link rel="stylesheet" href="css/css-9912ea04fb088eb1.css" data-n-p="">
+    <link rel="preload" href="/_next/static/css/8f0ce6b0fade56cc.css" as="style">
+    <link rel="stylesheet" href="css/css-8f0ce6b0fade56cc.css" data-n-p=""><noscript data-n-css=""></noscript>
+    <script defer nomodule="" src="js/chunks-polyfills-5cd94c89d3acac5f.js"></script>
+    <!--<script src="js/chunks-webpack-22fdafeafa5bda39.js" defer></script>-->
+    <script src="js/chunks-framework-70134ee1270fb32c.js" defer></script>
+    <script src="js/chunks-main-8082428802fa0fb1.js" defer></script>
+    <script src="js/pages-_app-540a49074cf656d0.js" defer></script>
+    <script src="js/chunks-720-8a11f359034b035c.js" defer></script>
+    <script src="js/chunks-589-a4ca9306502f10f3.js" defer></script>
+    <script src="js/chunks-609-66e466004c19281e.js" defer></script>
+    <script src="js/chunks-751-4772a88b6ecaa406.js" defer></script>
+    <script src="js/pages-index-4716cd8ec6cdd7a1.js" defer></script>
+    <script src="js/EeGLc4iGJ2qOJuyqOmwcf-_buildManifest.js" defer></script>
+    <script src="js/EeGLc4iGJ2qOJuyqOmwcf-_ssgManifest.js" defer></script>
+    <script src="js/EeGLc4iGJ2qOJuyqOmwcf-_middlewareManifest.js" defer></script>
+</head>
+
+<body>
+    <div id="__next" data-reactroot="">
+        <div class="">
+            <div class="bg-moonlight dark:bg-spacegrey">
+                <header class="w-full dark">
+                    <div class="hidden lg:flex">
+                        <div class="w-full fixed bg-moonlight dark:bg-spacegrey z-30 py-8 md:py-16 xl:py-20 top-0">
+                            <div class="roq-layout">
+                                <div class="col-span-9 xl:col-span-8 flex items-center gap-12 lg:gap-16 xl:gap-20"><a
+                                        role="presentation" class="flex-shrink-0 text-color w-72 h-35 md:w-88 md:h-40"
+                                        aria-label="Go to link" href="www.roq.html"><svg viewbox="0 0 324 156"
+                                            fill="currentColor">
+                                            <path
+                                                d="M160.897 42.845c10.927 0 21.152 5.094 27.869 13.583l9.523-10.687c-9.323-10.786-23.057-17.177-37.592-17.177-27.368 0-49.523 22.171-49.523 49.336 0 27.265 22.255 49.337 49.523 49.337 27.367 0 49.522-22.172 49.522-49.337 0-19.375 15.839-35.055 35.187-35.055s35.187 15.78 35.187 35.055c0 7.49-2.406 14.382-6.316 20.075L260.643 85.69l-9.623 10.587 12.731 11.485c-5.313 3.296-11.629 5.193-18.345 5.193-10.927 0-21.253-5.093-27.869-13.682l-9.724 10.686c9.323 10.886 23.057 17.278 37.593 17.278 11.027 0 21.152-3.595 29.372-9.588l10.827 9.688 9.624-10.587-10.225-9.188c6.215-8.29 9.924-18.576 9.924-29.662.201-27.165-22.054-49.337-49.322-49.337-27.367 0-49.522 22.172-49.522 49.337 0 19.375-15.839 35.055-35.187 35.055-19.448 0-35.187-15.78-35.187-35.055 0-19.375 15.839-35.055 35.187-35.055z">
+                                            </path>
+                                            <path
+                                                d="M0 0v156h90.824L80.9 141.718H14.335V14.282h295.33v127.436H115.886L79.897 89.685c13.935-2.996 24.36-15.38 24.36-30.161 0-17.078-13.934-30.96-31.076-30.96H28.77v98.873h14.335V42.845H73.18c9.222 0 16.741 7.49 16.741 16.679 0 9.188-7.519 16.678-16.741 16.678H53.13L108.167 156H324V0H0z">
+                                            </path>
+                                        </svg></a>
+                                    <div class="flex-1 flex items-center">
+                                        <div class="header_flyout__YsESD">
+                                            <div class="relative"><button
+                                                    class="ml-20 lg:ml-24 xl:ml-40 text-base md:text-lg flex items-center gap-2 text-spacegrey dark:text-moonlight"
+                                                    id="headlessui-popover-button-undefined" type="button"
+                                                    aria-expanded="false">Features<svg
+                                                        xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20"
+                                                        fill="currentColor" aria-hidden="true" width="16" height="16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg></button></div>
+                                        </div>
+                                        <div class="header_flyout__YsESD">
+                                            <div class="relative"><button
+                                                    class="ml-20 lg:ml-24 xl:ml-40 text-base md:text-lg flex items-center gap-2 text-spacegrey dark:text-moonlight"
+                                                    id="headlessui-popover-button-undefined" type="button"
+                                                    aria-expanded="false">Use Cases<svg
+                                                        xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20"
+                                                        fill="currentColor" aria-hidden="true" width="16" height="16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg></button></div>
+                                        </div><a href="https://docs.roq.tech/dev/" target="_blank"
+                                            class="text-color leading-normal transition-colors ease-linear duration-150 text-base md:text-lg hover:text-aquamarine dark:hover:text-aquamarine ml-20 lg:ml-24 xl:ml-40"
+                                            aria-label="Go to link">Docs</a><a role="presentation"
+                                            class="text-color leading-normal transition-colors ease-linear duration-150 text-base md:text-lg hover:text-aquamarine dark:hover:text-aquamarine ml-20 lg:ml-24 xl:ml-40"
+                                            aria-label="Go to link" href="about-us.html">About Us</a>
+                                    </div>
+                                </div>
+                                <div class="col-span-3 xl:col-span-4 flex items-center justify-end"><a
+                                        class="flex items-center h-40 cursor-pointer overflow-hidden hover:opacity-60 ml-20 lg:ml-28 xl:ml-40 h-40 text-lg text-color flex-shrink-0"
+                                        target="_blank" href="contact-us.html">
+                                        <div class="flex items-center font-medium text-current">
+                                            <div class="text-current">
+                                                <div class="text-current" style="transform:none">
+                                                    <div class="flex items-center text-current">
+                                                        <div class="">Talk to the </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a><a href="https://console.roq.tech/" target="_blank"
+                                        class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 ml-20 lg:ml-28 xl:ml-40 h-40 bg-aquamarine dark:bg-aquamarine text-lg text-spacegrey flex-shrink-0">
+                                        <div class="flex items-center font-medium text-current">
+                                            <div class="text-current">
+                                                <div class="text-current" style="transform:none">User Login</div>
+                                            </div>
+                                        </div>
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:hidden">
+                        <div class="w-full py-8 bg-white dark:bg-spacegrey fixed z-30 top-0">
+                            <div class="roq-layout"><a role="presentation" class="col-span-2 text-color w-72 h-35"
+                                    aria-label="Go to link" href="www.roq.html"><svg viewbox="0 0 324 156"
+                                        fill="currentColor">
+                                        <path
+                                            d="M160.897 42.845c10.927 0 21.152 5.094 27.869 13.583l9.523-10.687c-9.323-10.786-23.057-17.177-37.592-17.177-27.368 0-49.523 22.171-49.523 49.336 0 27.265 22.255 49.337 49.523 49.337 27.367 0 49.522-22.172 49.522-49.337 0-19.375 15.839-35.055 35.187-35.055s35.187 15.78 35.187 35.055c0 7.49-2.406 14.382-6.316 20.075L260.643 85.69l-9.623 10.587 12.731 11.485c-5.313 3.296-11.629 5.193-18.345 5.193-10.927 0-21.253-5.093-27.869-13.682l-9.724 10.686c9.323 10.886 23.057 17.278 37.593 17.278 11.027 0 21.152-3.595 29.372-9.588l10.827 9.688 9.624-10.587-10.225-9.188c6.215-8.29 9.924-18.576 9.924-29.662.201-27.165-22.054-49.337-49.322-49.337-27.367 0-49.522 22.172-49.522 49.337 0 19.375-15.839 35.055-35.187 35.055-19.448 0-35.187-15.78-35.187-35.055 0-19.375 15.839-35.055 35.187-35.055z">
+                                        </path>
+                                        <path
+                                            d="M0 0v156h90.824L80.9 141.718H14.335V14.282h295.33v127.436H115.886L79.897 89.685c13.935-2.996 24.36-15.38 24.36-30.161 0-17.078-13.934-30.96-31.076-30.96H28.77v98.873h14.335V42.845H73.18c9.222 0 16.741 7.49 16.741 16.679 0 9.188-7.519 16.678-16.741 16.678H53.13L108.167 156H324V0H0z">
+                                        </path>
+                                    </svg></a>
+                                <div class="col-start-12 justify-self-end"><button
+                                        class="p-2 text-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-inset"
+                                        id="headlessui-popover-button-undefined" type="button"
+                                        aria-expanded="false"><span class="sr-only">Open menu</span><svg
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                            stroke="currentColor" aria-hidden="true" class="w-30 h-30 text-color">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4 6h16M4 12h16M4 18h16"></path>
+                                        </svg></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="w-full bg-spacegrey">
+                        <div class="pb-64 lg:pb-120 pt-112 md:pt-160 lg:pt-180 xl:pt-200 roq-layout dark">
+                            <div class="col-span-12 md:col-span-10 md:col-start-2 lg:col-span-6 lg:col-start-1">
+                                <h1
+                                    class="mainHero_headline__iQ9dH font-extrabold text-7/2xl md:text-7/2xl lg:text-heading xl:text-5xl text-center lg:text-left text-color font-display leading-none">
+                                </h1>
+                                <p><span>Turn your web app into a fully-fledged SaaS application</span></p>
+                                <div
+                                    class="mt-24 md:mt-32 text-base text-center lg:text-left md:text-lg lg:text-xl text-color">
+                                    <p><span>Ready-to-use UI components and APIs for all essential features you need to
+                                            build your SaaS application</span></p>
+                                </div>
+                                <div
+                                    class="mt-24 md:mt-32 flex items-center justify-center lg:justify-start gap-12 md:gap-16 flex-wrap">
+                                    <a class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey justify-center min-w-max"
+                                        style="background-color:#2FBDEA;color:#1F2B48" href="contact-us.html">
+                                        <div class="flex items-center font-medium text-current">
+                                            <div class="text-current">
+                                                <div class="text-current" style="transform:none">
+                                                    <div class="flex text-current items-center">
+                                                        <div class="">Get started</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a><a href="https://github.com/roqtech/react-ui-components" target="_blank"
+                                        class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey min-w-max"
+                                        style="background-color:#878AA5;color:#FFFDF5">
+                                        <div class="flex items-center font-medium text-current">
+                                            <div class="text-current">
+                                                <div class="text-current" style="transform:none">
+                                                    <div class="flex text-current items-center">
+                                                        <div class="w-24 h-24"><span
+                                                                style="box-sizing:border-box;display:inline-block;overflow:hidden;width:24px;height:24px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                                    alt="github-icon."
+                                                                    srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=48&amp;q=75 2x"
+                                                                    src="images/_next-image" decoding="async"
+                                                                    data-nimg="fixed"
+                                                                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span>
+                                                        </div>
+                                                        <div class="ml-12">Github</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></div>
+                            </div>
+                            <div
+                                class="col-span-12 md:col-span-10 md:col-start-2 lg:col-span-5 lg:col-start-8 mt-24 lg:mt-0">
+                                <div class="image-container lg:h-full"><span
+                                        style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                            sizes="100vw"
+                                            srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668172605-hero-home_dark.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668172605-hero-home_dark.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668172605-hero-home_dark.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668172605-hero-home_dark.svg&amp;w=1440&amp;q=75 1440w"
+                                            src="images/_next-image" decoding="async" data-nimg="fill"
+                                            class="image-fill rounded-4"
+                                            style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;filter:blur(20px);background-size:cover;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=");background-position:0% 0%'></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-80 lg:mt-120 xl:mt-144">
+                        <div class="customStructured_structure__Le0cA">
+                            <div id="55984082" class="relative my-80 md:my-112 lg:my-136 xl:my-160">
+                                <div
+                                    class="col-span-12 roq-layout py-8 bg-moonlight sticky z-20 invisible top-52 lg:top-72">
+                                    <div class="col-span-12 flex flex-wrap justify-center items-center gap-8 lg:gap-16">
+                                        <button
+                                            class="flex items-center h-40 cursor-pointer overflow-hidden hover:opacity-60 text-spacegrey dark:text-moonlight px-8 lg:px-12 border rounded-lg border-spacegrey dark:border-moonlight text-base min-w-max max-w-min opacity-100 hover:opacity-100">
+                                            <div class="flex items-center font-medium text-current">
+                                                <div class="text-current">
+                                                    <div class="text-current" style="transform:none">Authentication
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button><button
+                                            class="flex items-center h-40 cursor-pointer overflow-hidden hover:opacity-60 text-spacegrey dark:text-moonlight px-8 lg:px-12 border rounded-lg border-spacegrey dark:border-moonlight text-base min-w-max max-w-min opacity-100 hover:opacity-100">
+                                            <div class="flex items-center font-medium text-current">
+                                                <div class="text-current">
+                                                    <div class="text-current" style="transform:none">User management
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button><button
+                                            class="flex items-center h-40 cursor-pointer overflow-hidden hover:opacity-60 text-spacegrey dark:text-moonlight px-8 lg:px-12 border rounded-lg border-spacegrey dark:border-moonlight text-base min-w-max max-w-min opacity-100 hover:opacity-100">
+                                            <div class="flex items-center font-medium text-current">
+                                                <div class="text-current">
+                                                    <div class="text-current" style="transform:none">User groups</div>
+                                                </div>
+                                            </div>
+                                        </button><button
+                                            class="flex items-center h-40 cursor-pointer overflow-hidden hover:opacity-60 text-spacegrey dark:text-moonlight px-8 lg:px-12 border rounded-lg border-spacegrey dark:border-moonlight text-base min-w-max max-w-min opacity-100 hover:opacity-100">
+                                            <div class="flex items-center font-medium text-current">
+                                                <div class="text-current">
+                                                    <div class="text-current" style="transform:none">Access Management
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button><button
+                                            class="flex items-center h-40 cursor-pointer overflow-hidden hover:opacity-60 text-spacegrey dark:text-moonlight px-8 lg:px-12 border rounded-lg border-spacegrey dark:border-moonlight text-base min-w-max max-w-min opacity-100 hover:opacity-100">
+                                            <div class="flex items-center font-medium text-current">
+                                                <div class="text-current">
+                                                    <div class="text-current" style="transform:none">File Handling</div>
+                                                </div>
+                                            </div>
+                                        </button><button
+                                            class="flex items-center h-40 cursor-pointer overflow-hidden hover:opacity-60 text-spacegrey dark:text-moonlight px-8 lg:px-12 border rounded-lg border-spacegrey dark:border-moonlight text-base min-w-max max-w-min opacity-100 hover:opacity-100">
+                                            <div class="flex items-center font-medium text-current">
+                                                <div class="text-current">
+                                                    <div class="text-current" style="transform:none">Notifications</div>
+                                                </div>
+                                            </div>
+                                        </button><button
+                                            class="flex items-center h-40 cursor-pointer overflow-hidden hover:opacity-60 text-spacegrey dark:text-moonlight px-8 lg:px-12 border rounded-lg border-spacegrey dark:border-moonlight text-base min-w-max max-w-min opacity-100 hover:opacity-100">
+                                            <div class="flex items-center font-medium text-current">
+                                                <div class="text-current">
+                                                    <div class="text-current" style="transform:none">Chat</div>
+                                                </div>
+                                            </div>
+                                        </button><button
+                                            class="flex items-center h-40 cursor-pointer overflow-hidden hover:opacity-60 text-spacegrey dark:text-moonlight px-8 lg:px-12 border rounded-lg border-spacegrey dark:border-moonlight text-base min-w-max max-w-min opacity-100 hover:opacity-100">
+                                            <div class="flex items-center font-medium text-current">
+                                                <div class="text-current">
+                                                    <div class="text-current" style="transform:none">Translation</div>
+                                                </div>
+                                            </div>
+                                        </button></div>
+                                </div>
+                                <div class="roq-layout">
+                                    <div class="mt-80 col-span-12 roq-grid gap-20 mb-28 md:mb-48">
+                                        <h2
+                                            class="text-color font-semibold my-0 justify-self-center text-center col-span-10 col-start-2 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4">
+                                            ROQ leverages ready-to-use UI components with API's that provide you with
+                                            all the features necessary for your application. </h2>
+                                    </div>
+                                    <div class="col-span-12 flex flex-col gap-40">
+                                        <div class="customStructured_row-record__cF8mM my-40 md:mt-80 lg:mt-120 items-start roq-grid"
+                                            id="authentication">
+                                            <div class="grid-col-span-6 md:mr-24">
+                                                <div class="roq-grid w-full">
+                                                    <div
+                                                        class="relative overflow-hidden rounded-4 col-span-12 image-container">
+                                                        <span
+                                                            style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                                                sizes="100vw"
+                                                                srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668395008-hero-login_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668395008-hero-login_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668395008-hero-login_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668395008-hero-login_light.svg&amp;w=1440&amp;q=75 1440w"
+                                                                src="images/_next-image" decoding="async"
+                                                                data-nimg="fill" class="image-fill w-full"
+                                                                style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;filter:blur(20px);background-size:cover;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=");background-position:0% 0%'>
+                                                            <img src="./images/img1.svg" alt="">
+                                                            </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="order-first md:order-none grid-col-span-6 md:ml-24">
+                                                <h2 id="heading-t-0" class="customStructured_heading-2__my3sZ">
+                                                    <strong>Authentication</strong></h2>
+                                                <p class="customStructured_paragraph__tdwcg"><strong>Advanced
+                                                        authentication features in a matter of minutes.</strong></p>
+                                                <p class="customStructured_paragraph__tdwcg">Leverage state-of-the-art
+                                                    authentication and authorization to enhance your application with
+                                                    SSO, MFA, and password forgotten. Offer your users more security and
+                                                    less friction.</p>
+                                                <div id="56354406"
+                                                    class="mt-24 md:mt-32 flex flex-col lg:flex-row items-stretch xl:items-center justify-center md:justify-start gap-12 md:gap-16">
+                                                    <div
+                                                        class="xl:flex-1 flex justify-center md:justify-start lg:max-w-max">
+                                                        <a href="https://github.com/roqtech/react-ui-components"
+                                                            target="_blank"
+                                                            class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey border border-spacegrey max-w-228 xl:max-w-max w-full"
+                                                            style="background-color:#FFFFFF;color:#1F2B48">
+                                                            <div
+                                                                class="flex items-center font-medium text-current w-full">
+                                                                <div class="text-current w-full">
+                                                                    <div class="text-current" style="transform:none">
+                                                                        <div
+                                                                            class="flex text-current w-full justify-center">
+                                                                            <div class="w-24 h-24"><span
+                                                                                    style="box-sizing:border-box;display:inline-block;overflow:hidden;width:24px;height:24px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                                                        alt="github-icon."
+                                                                                        srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=48&amp;q=75 2x"
+                                                                                        src="images/_next-image"
+                                                                                        decoding="async"
+                                                                                        data-nimg="fixed"
+                                                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span>
+                                                                            </div>
+                                                                            <div class="ml-12">Github</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                    <div
+                                                        class="xl:flex-1 flex justify-center md:justify-start lg:max-w-max">
+                                                        <a class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey border border-spacegrey justify-center max-w-228 xl:max-w-max w-full"
+                                                            style="background-color:#FFFFFF;color:#1F2B48"
+                                                            href="authentication.html">
+                                                            <div
+                                                                class="flex items-center font-medium text-current w-full">
+                                                                <div class="text-current w-full">
+                                                                    <div class="text-current" style="transform:none">
+                                                                        <div
+                                                                            class="flex text-current w-full justify-center">
+                                                                            <div class="">Learn more</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="customStructured_row-record__cF8mM my-40 md:mt-80 lg:mt-120 items-start roq-grid"
+                                            id="user-management">
+                                            <div class="grid-col-span-6 md:mr-24">
+                                                <h2 id="heading-t-0" class="customStructured_heading-2__my3sZ">
+                                                    <strong>User Management</strong></h2>
+                                                <p class="customStructured_paragraph__tdwcg"><strong>A user management
+                                                        that puts your customers first.</strong></p>
+                                                <p class="customStructured_paragraph__tdwcg">From sign-up through
+                                                    purchase, create a great experience for both you and your
+                                                    users.&nbsp;Set up individual user profiles, including avatars,
+                                                    time-zones, and language preferences. </p>
+                                                <div id="56064330"
+                                                    class="mt-24 md:mt-32 flex flex-col lg:flex-row items-stretch xl:items-center justify-center md:justify-start gap-12 md:gap-16">
+                                                    <div
+                                                        class="xl:flex-1 flex justify-center md:justify-start lg:max-w-max">
+                                                        <a href="https://github.com/roqtech/react-ui-components"
+                                                            target="_blank"
+                                                            class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey border border-spacegrey max-w-228 xl:max-w-max w-full"
+                                                            style="background-color:#FFFFFF;color:#1F2B48">
+                                                            <div
+                                                                class="flex items-center font-medium text-current w-full">
+                                                                <div class="text-current w-full">
+                                                                    <div class="text-current" style="transform:none">
+                                                                        <div
+                                                                            class="flex text-current w-full justify-center">
+                                                                            <div class="w-24 h-24"><span
+                                                                                    style="box-sizing:border-box;display:inline-block;overflow:hidden;width:24px;height:24px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                                                        alt="github-icon."
+                                                                                        srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=48&amp;q=75 2x"
+                                                                                        src="images/_next-image"
+                                                                                        decoding="async"
+                                                                                        data-nimg="fixed"
+                                                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%">
+                                                                                        <img src="./images/img2.svg" alt="">
+                                                                                    </span>
+                                                                
+                                                                            </div>
+                                                                            <div class="ml-12">Github</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                    <div
+                                                        class="xl:flex-1 flex justify-center md:justify-start lg:max-w-max">
+                                                        <a class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey border border-spacegrey justify-center max-w-228 xl:max-w-max w-full"
+                                                            style="background-color:#FFFFFF;color:#1F2B48"
+                                                            href="user-management.html">
+                                                            <div
+                                                                class="flex items-center font-medium text-current w-full">
+                                                                <div class="text-current w-full">
+                                                                    <div class="text-current" style="transform:none">
+                                                                        <div
+                                                                            class="flex text-current w-full justify-center">
+                                                                            <div class="">Details</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                </div>
+                                            </div>
+                                            <div class="grid-col-span-6 md:ml-24">
+                                                <div class="roq-grid w-full">
+                                                    <div
+                                                        class="relative overflow-hidden rounded-4 col-span-12 image-container">
+                                                        <span
+                                                            style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                                                sizes="100vw"
+                                                                srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394853-hero-usermanagement_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394853-hero-usermanagement_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394853-hero-usermanagement_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394853-hero-usermanagement_light.svg&amp;w=1440&amp;q=75 1440w"
+                                                                src="images/_next-image" decoding="async"
+                                                                data-nimg="fill" class="image-fill w-full"
+                                                                style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;filter:blur(20px);background-size:cover;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=");background-position:0% 0%'></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="customStructured_row-record__cF8mM my-40 md:mt-80 lg:mt-120 items-start roq-grid"
+                                            id="user-groups">
+                                            <div class="grid-col-span-6 md:mr-24">
+                                                <div class="roq-grid w-full">
+                                                    <div
+                                                        class="relative overflow-hidden rounded-4 col-span-12 image-container">
+                                                        <span
+                                                            style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                                                sizes="100vw"
+                                                                srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394866-hero-usergroups_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394866-hero-usergroups_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394866-hero-usergroups_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394866-hero-usergroups_light.svg&amp;w=1440&amp;q=75 1440w"
+                                                                src="images/_next-image" decoding="async"
+                                                                data-nimg="fill" class="image-fill w-full"
+                                                                style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;filter:blur(20px);background-size:cover;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=");background-position:0% 0%'></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="order-first md:order-none grid-col-span-6 md:ml-24">
+                                                <h2 id="heading-t-0" class="customStructured_heading-2__my3sZ">
+                                                    <strong>User Groups</strong></h2>
+                                                <p class="customStructured_paragraph__tdwcg"><strong>A modern user group
+                                                        management to structure accounts, teams, and organizations.
+                                                    </strong></p>
+                                                <p class="customStructured_paragraph__tdwcg">Our APIs and UI components
+                                                    allow you to set up user groups and their individual functions
+                                                    according to your business logic.</p>
+                                                <p class="customStructured_paragraph__tdwcg"></p>
+                                                <div id="56064335"
+                                                    class="mt-24 md:mt-32 flex flex-col lg:flex-row items-stretch xl:items-center justify-center md:justify-start gap-12 md:gap-16">
+                                                    <div
+                                                        class="xl:flex-1 flex justify-center md:justify-start lg:max-w-max">
+                                                        <a href="https://github.com/roqtech/react-ui-components"
+                                                            target="_blank"
+                                                            class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey border border-spacegrey max-w-228 xl:max-w-max w-full"
+                                                            style="background-color:#FFFFFF;color:#1F2B48">
+                                                            <div
+                                                                class="flex items-center font-medium text-current w-full">
+                                                                <div class="text-current w-full">
+                                                                    <div class="text-current" style="transform:none">
+                                                                        <div
+                                                                            class="flex text-current w-full justify-center">
+                                                                            <div class="w-24 h-24"><span
+                                                                                    style="box-sizing:border-box;display:inline-block;overflow:hidden;width:24px;height:24px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                                                        alt="github-icon."
+                                                                                        srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=48&amp;q=75 2x"
+                                                                                        src="images/_next-image"
+                                                                                        decoding="async"
+                                                                                        data-nimg="fixed"
+                                                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span>
+                                                                            </div>
+                                                                            <div class="ml-12">Github</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="customStructured_row-record__cF8mM my-40 md:mt-80 lg:mt-120 items-start roq-grid"
+                                            id="access-management ">
+                                            <div class="grid-col-span-6 md:mr-24">
+                                                <h2 id="heading-t-0" class="customStructured_heading-2__my3sZ">
+                                                    <strong>Access Management</strong></h2>
+                                                <p class="customStructured_paragraph__tdwcg"><strong>A smart access
+                                                        management to define access roles for your users.</strong></p>
+                                                <p class="customStructured_paragraph__tdwcg">Set rules, which user is
+                                                    allowed to retrieve relevant data, tools, or ressources. Our UI
+                                                    components and APIs will allow you to expand your authorization
+                                                    capabilities and act on access rights and permissions for
+                                                    individuals or groups. </p>
+                                                <div id="56064340"
+                                                    class="mt-24 md:mt-32 flex flex-col lg:flex-row items-stretch xl:items-center justify-center md:justify-start gap-12 md:gap-16">
+                                                    <div
+                                                        class="xl:flex-1 flex justify-center md:justify-start lg:max-w-max">
+                                                        <a href="https://github.com/roqtech/react-ui-components"
+                                                            target="_blank"
+                                                            class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey border border-spacegrey max-w-228 xl:max-w-max w-full"
+                                                            style="background-color:#FFFFFF;color:#1F2B48">
+                                                            <div
+                                                                class="flex items-center font-medium text-current w-full">
+                                                                <div class="text-current w-full">
+                                                                    <div class="text-current" style="transform:none">
+                                                                        <div
+                                                                            class="flex text-current w-full justify-center">
+                                                                            <div class="w-24 h-24"><span
+                                                                                    style="box-sizing:border-box;display:inline-block;overflow:hidden;width:24px;height:24px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                                                        alt="github-icon."
+                                                                                        srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=48&amp;q=75 2x"
+                                                                                        src="images/_next-image"
+                                                                                        decoding="async"
+                                                                                        data-nimg="fixed"
+                                                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span>
+                                                                            </div>
+                                                                            <div class="ml-12">Github</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                    <div
+                                                        class="xl:flex-1 flex justify-center md:justify-start lg:max-w-max">
+                                                        <a class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey border border-spacegrey justify-center max-w-228 xl:max-w-max w-full"
+                                                            style="background-color:#FFFFFF;color:#1F2B48"
+                                                            href="access-management.html">
+                                                            <div
+                                                                class="flex items-center font-medium text-current w-full">
+                                                                <div class="text-current w-full">
+                                                                    <div class="text-current" style="transform:none">
+                                                                        <div
+                                                                            class="flex text-current w-full justify-center">
+                                                                            <div class="">Details</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                </div>
+                                            </div>
+                                            <div class="grid-col-span-6 md:ml-24">
+                                                <div class="roq-grid w-full">
+                                                    <div
+                                                        class="relative overflow-hidden rounded-4 col-span-12 image-container">
+                                                        <span
+                                                            style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                                                sizes="100vw"
+                                                                srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394902-hero-accessmanagement_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394902-hero-accessmanagement_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394902-hero-accessmanagement_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394902-hero-accessmanagement_light.svg&amp;w=1440&amp;q=75 1440w"
+                                                                src="images/_next-image" decoding="async"
+                                                                data-nimg="fill" class="image-fill w-full"
+                                                                style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;filter:blur(20px);background-size:cover;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=");background-position:0% 0%'></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="customStructured_row-record__cF8mM my-40 md:mt-80 lg:mt-120 items-start roq-grid"
+                                            id="Files">
+                                            <div class="grid-col-span-6 md:mr-24">
+                                                <div class="roq-grid w-full">
+                                                    <div
+                                                        class="relative overflow-hidden rounded-4 col-span-12 image-container">
+                                                        <span
+                                                            style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                                                sizes="100vw"
+                                                                srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394914-hero-files_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394914-hero-files_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394914-hero-files_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394914-hero-files_light.svg&amp;w=1440&amp;q=75 1440w"
+                                                                src="images/_next-image" decoding="async"
+                                                                data-nimg="fill" class="image-fill w-full"
+                                                                style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;filter:blur(20px);background-size:cover;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=");background-position:0% 0%'></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="order-first md:order-none grid-col-span-6 md:ml-24">
+                                                <h2 id="heading-t-0" class="customStructured_heading-2__my3sZ">
+                                                    <strong>File Management</strong></h2>
+                                                <p class="customStructured_paragraph__tdwcg"><strong>Drag &amp; drop
+                                                        uploader and file handling API.</strong></p>
+                                                <p class="customStructured_paragraph__tdwcg">To upload, alter, and
+                                                    distribute any file into your SaaS application, leverage an easy to
+                                                    use file uploader and powerful APIs.</p>
+                                                <div id="56064344"
+                                                    class="mt-24 md:mt-32 flex flex-col lg:flex-row items-stretch xl:items-center justify-center md:justify-start gap-12 md:gap-16">
+                                                    <div
+                                                        class="xl:flex-1 flex justify-center md:justify-start lg:max-w-max">
+                                                        <a href="https://github.com/roqtech/react-ui-components"
+                                                            target="_blank"
+                                                            class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey border border-spacegrey max-w-228 xl:max-w-max w-full"
+                                                            style="background-color:#FFFFFF;color:#1F2B48">
+                                                            <div
+                                                                class="flex items-center font-medium text-current w-full">
+                                                                <div class="text-current w-full">
+                                                                    <div class="text-current" style="transform:none">
+                                                                        <div
+                                                                            class="flex text-current w-full justify-center">
+                                                                            <div class="w-24 h-24"><span
+                                                                                    style="box-sizing:border-box;display:inline-block;overflow:hidden;width:24px;height:24px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                                                        alt="github-icon."
+                                                                                        srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=48&amp;q=75 2x"
+                                                                                        src="images/_next-image"
+                                                                                        decoding="async"
+                                                                                        data-nimg="fixed"
+                                                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span>
+                                                                            </div>
+                                                                            <div class="ml-12">Github</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                    <div
+                                                        class="xl:flex-1 flex justify-center md:justify-start lg:max-w-max">
+                                                        <a class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey border border-spacegrey justify-center max-w-228 xl:max-w-max w-full"
+                                                            style="background-color:#FFFFFF;color:#1F2B48"
+                                                            href="file-management.html">
+                                                            <div
+                                                                class="flex items-center font-medium text-current w-full">
+                                                                <div class="text-current w-full">
+                                                                    <div class="text-current" style="transform:none">
+                                                                        <div
+                                                                            class="flex text-current w-full justify-center">
+                                                                            <div class="">Details</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="customStructured_row-record__cF8mM my-40 md:mt-80 lg:mt-120 items-start roq-grid"
+                                            id="notification-mails">
+                                            <div class="grid-col-span-6 md:mr-24">
+                                                <h2 id="heading-t-0" class="customStructured_heading-2__my3sZ">
+                                                    <strong>Notifications</strong></h2>
+                                                <p class="customStructured_paragraph__tdwcg"><strong>Your in-app
+                                                        notifications and mailing out of the box.</strong></p>
+                                                <p class="customStructured_paragraph__tdwcg">Our notification feature
+                                                    let's you send notifications to single users or user groups via
+                                                    various channels. Key channels encompass Push, In-App, and Email.
+                                                    Users can manage their own preferences. You can trigger
+                                                    notifications from your app via our GraphQL APIs.</p>
+                                                <div id="56064348"
+                                                    class="mt-24 md:mt-32 flex flex-col lg:flex-row items-stretch xl:items-center justify-center md:justify-start gap-12 md:gap-16">
+                                                    <div
+                                                        class="xl:flex-1 flex justify-center md:justify-start lg:max-w-max">
+                                                        <a href="https://github.com/roqtech/react-ui-components"
+                                                            target="_blank"
+                                                            class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey border border-spacegrey max-w-228 xl:max-w-max w-full"
+                                                            style="background-color:#FFFFFF;color:#1F2B48">
+                                                            <div
+                                                                class="flex items-center font-medium text-current w-full">
+                                                                <div class="text-current w-full">
+                                                                    <div class="text-current" style="transform:none">
+                                                                        <div
+                                                                            class="flex text-current w-full justify-center">
+                                                                            <div class="w-24 h-24"><span
+                                                                                    style="box-sizing:border-box;display:inline-block;overflow:hidden;width:24px;height:24px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                                                        alt="github-icon."
+                                                                                        srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=48&amp;q=75 2x"
+                                                                                        src="images/_next-image"
+                                                                                        decoding="async"
+                                                                                        data-nimg="fixed"
+                                                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span>
+                                                                            </div>
+                                                                            <div class="ml-12">Github</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                    <div
+                                                        class="xl:flex-1 flex justify-center md:justify-start lg:max-w-max">
+                                                        <a class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey border border-spacegrey justify-center max-w-228 xl:max-w-max w-full"
+                                                            style="background-color:#FFFFFF;color:#1F2B48"
+                                                            href="notifications-mailing.html">
+                                                            <div
+                                                                class="flex items-center font-medium text-current w-full">
+                                                                <div class="text-current w-full">
+                                                                    <div class="text-current" style="transform:none">
+                                                                        <div
+                                                                            class="flex text-current w-full justify-center">
+                                                                            <div class="">Details</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                </div>
+                                            </div>
+                                            <div class="grid-col-span-6 md:ml-24">
+                                                <div class="roq-grid w-full">
+                                                    <div
+                                                        class="relative overflow-hidden rounded-4 col-span-12 image-container">
+                                                        <span
+                                                            style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                                                sizes="100vw"
+                                                                srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394927-hero-notifications_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394927-hero-notifications_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394927-hero-notifications_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394927-hero-notifications_light.svg&amp;w=1440&amp;q=75 1440w"
+                                                                src="images/_next-image" decoding="async"
+                                                                data-nimg="fill" class="image-fill w-full"
+                                                                style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;filter:blur(20px);background-size:cover;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=");background-position:0% 0%'></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="customStructured_row-record__cF8mM my-40 md:mt-80 lg:mt-120 items-start roq-grid"
+                                            id="chat">
+                                            <div class="grid-col-span-6 md:mr-24">
+                                                <div class="roq-grid w-full">
+                                                    <div
+                                                        class="relative overflow-hidden rounded-4 col-span-12 image-container">
+                                                        <span
+                                                            style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                                                sizes="100vw"
+                                                                srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394965-hero-chat_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394965-hero-chat_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394965-hero-chat_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394965-hero-chat_light.svg&amp;w=1440&amp;q=75 1440w"
+                                                                src="images/_next-image" decoding="async"
+                                                                data-nimg="fill" class="image-fill w-full"
+                                                                style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;filter:blur(20px);background-size:cover;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=");background-position:0% 0%'></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="order-first md:order-none grid-col-span-6 md:ml-24">
+                                                <h2 id="heading-t-0" class="customStructured_heading-2__my3sZ">
+                                                    <strong>Real-Time Chat</strong></h2>
+                                                <p class="customStructured_paragraph__tdwcg"><strong>Build a real-time
+                                                        in-app chat that is secure and scalable.</strong></p>
+                                                <p class="customStructured_paragraph__tdwcg">With our SDKs and APIs for
+                                                    messaging, voice, and video calling you can set up an in-app chat in
+                                                    hours not&nbsp;weeks.</p>
+                                                <div id="56064352"
+                                                    class="mt-24 md:mt-32 flex flex-col lg:flex-row items-stretch xl:items-center justify-center md:justify-start gap-12 md:gap-16">
+                                                    <div
+                                                        class="xl:flex-1 flex justify-center md:justify-start lg:max-w-max">
+                                                        <a href="https://github.com/roqtech/react-ui-components"
+                                                            target="_blank"
+                                                            class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey border border-spacegrey max-w-228 xl:max-w-max w-full"
+                                                            style="background-color:#FFFFFF;color:#1F2B48">
+                                                            <div
+                                                                class="flex items-center font-medium text-current w-full">
+                                                                <div class="text-current w-full">
+                                                                    <div class="text-current" style="transform:none">
+                                                                        <div
+                                                                            class="flex text-current w-full justify-center">
+                                                                            <div class="w-24 h-24"><span
+                                                                                    style="box-sizing:border-box;display:inline-block;overflow:hidden;width:24px;height:24px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                                                        alt="github-icon."
+                                                                                        srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=48&amp;q=75 2x"
+                                                                                        src="images/_next-image"
+                                                                                        decoding="async"
+                                                                                        data-nimg="fixed"
+                                                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span>
+                                                                            </div>
+                                                                            <div class="ml-12">Github</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                    <div
+                                                        class="xl:flex-1 flex justify-center md:justify-start lg:max-w-max">
+                                                        <a class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey border border-spacegrey justify-center max-w-228 xl:max-w-max w-full"
+                                                            style="background-color:#FFFFFF;color:#1F2B48"
+                                                            href="message-center.html">
+                                                            <div
+                                                                class="flex items-center font-medium text-current w-full">
+                                                                <div class="text-current w-full">
+                                                                    <div class="text-current" style="transform:none">
+                                                                        <div
+                                                                            class="flex text-current w-full justify-center">
+                                                                            <div class="">Details</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="customStructured_row-record__cF8mM my-40 md:mt-80 lg:mt-120 items-start roq-grid"
+                                            id="translation">
+                                            <div class="grid-col-span-6 md:mr-24">
+                                                <h2 id="heading-t-0" class="customStructured_heading-2__my3sZ">
+                                                    <strong>Translation</strong></h2>
+                                                <p class="customStructured_paragraph__tdwcg"><strong>Translate your
+                                                        entire SaaS application with ease.</strong></p>
+                                                <p class="customStructured_paragraph__tdwcg">Easily manage all your
+                                                    translations and offer multi-language right from the start to make
+                                                    your solution available to a broader audience.</p>
+                                                <div id="56064356"
+                                                    class="mt-24 md:mt-32 flex flex-col lg:flex-row items-stretch xl:items-center justify-center md:justify-start gap-12 md:gap-16">
+                                                    <div
+                                                        class="xl:flex-1 flex justify-center md:justify-start lg:max-w-max">
+                                                        <a href="https://github.com/roqtech/react-ui-components"
+                                                            target="_blank"
+                                                            class="flex items-center h-40 cursor-pointer overflow-hidden bg-spacegrey dark:bg-moonlight px-20 rounded-full hover:opacity-80 text-moonlight dark:text-spacegrey border border-spacegrey max-w-228 xl:max-w-max w-full"
+                                                            style="background-color:#FFFFFF;color:#1F2B48">
+                                                            <div
+                                                                class="flex items-center font-medium text-current w-full">
+                                                                <div class="text-current w-full">
+                                                                    <div class="text-current" style="transform:none">
+                                                                        <div
+                                                                            class="flex text-current w-full justify-center">
+                                                                            <div class="w-24 h-24"><span
+                                                                                    style="box-sizing:border-box;display:inline-block;overflow:hidden;width:24px;height:24px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                                                        alt="github-icon."
+                                                                                        srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1653557629-github-icon.svg&amp;w=48&amp;q=75 2x"
+                                                                                        src="images/_next-image"
+                                                                                        decoding="async"
+                                                                                        data-nimg="fixed"
+                                                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span>
+                                                                            </div>
+                                                                            <div class="ml-12">Github</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a></div>
+                                                </div>
+                                            </div>
+                                            <div class="grid-col-span-6 md:ml-24">
+                                                <div class="roq-grid w-full">
+                                                    <div
+                                                        class="relative overflow-hidden rounded-4 col-span-12 image-container">
+                                                        <span
+                                                            style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                                                sizes="100vw"
+                                                                srcset="/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394951-hero-translation_light.svg&amp;w=375&amp;q=75 375w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394951-hero-translation_light.svg&amp;w=768&amp;q=75 768w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394951-hero-translation_light.svg&amp;w=1152&amp;q=75 1152w, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F62402%2F1668394951-hero-translation_light.svg&amp;w=1440&amp;q=75 1440w"
+                                                                src="images/_next-image" decoding="async"
+                                                                data-nimg="fill" class="image-fill w-full"
+                                                                style='position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;filter:blur(20px);background-size:cover;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=");background-position:0% 0%'></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="w-full mt-40 md:mt-48 lg:mt-72 xl:mt-80 dark">
+                    <div class="w-full bg-moonlight dark:bg-spacegrey py-24 md:py-32 lg:py-40">
+                        <div class="flex items-center flex-wrap roq-layout gap-24 lg:gap-32 xl:gap-40"><a
+                                role="presentation" class="text-color w-72 h-35 md:w-96 md:h-48" aria-label="Go to link"
+                                href="www.roq.html"><svg viewbox="0 0 324 156" fill="currentColor">
+                                    <path
+                                        d="M160.897 42.845c10.927 0 21.152 5.094 27.869 13.583l9.523-10.687c-9.323-10.786-23.057-17.177-37.592-17.177-27.368 0-49.523 22.171-49.523 49.336 0 27.265 22.255 49.337 49.523 49.337 27.367 0 49.522-22.172 49.522-49.337 0-19.375 15.839-35.055 35.187-35.055s35.187 15.78 35.187 35.055c0 7.49-2.406 14.382-6.316 20.075L260.643 85.69l-9.623 10.587 12.731 11.485c-5.313 3.296-11.629 5.193-18.345 5.193-10.927 0-21.253-5.093-27.869-13.682l-9.724 10.686c9.323 10.886 23.057 17.278 37.593 17.278 11.027 0 21.152-3.595 29.372-9.588l10.827 9.688 9.624-10.587-10.225-9.188c6.215-8.29 9.924-18.576 9.924-29.662.201-27.165-22.054-49.337-49.322-49.337-27.367 0-49.522 22.172-49.522 49.337 0 19.375-15.839 35.055-35.187 35.055-19.448 0-35.187-15.78-35.187-35.055 0-19.375 15.839-35.055 35.187-35.055z">
+                                    </path>
+                                    <path
+                                        d="M0 0v156h90.824L80.9 141.718H14.335V14.282h295.33v127.436H115.886L79.897 89.685c13.935-2.996 24.36-15.38 24.36-30.161 0-17.078-13.934-30.96-31.076-30.96H28.77v98.873h14.335V42.845H73.18c9.222 0 16.741 7.49 16.741 16.679 0 9.188-7.519 16.678-16.741 16.678H53.13L108.167 156H324V0H0z">
+                                    </path>
+                                </svg></a>
+                            <p class="text-base text-color">&copy; 2022 Platform 360 GmbH. All rights reserved.</p>
+                            <div class="flex items-center gap-24 lg:gap-32 xl:gap-40">
+                                <div class="flex items-center gap-24 lg:gap-32 xl:gap-40"><a role="presentation"
+                                        class="text-base md:text-lg text-spacegrey dark:text-darkmoon hover:text-gray-400"
+                                        aria-label="Imprint" href="imprint.html">Imprint</a><a role="presentation"
+                                        class="text-base md:text-lg text-spacegrey dark:text-darkmoon hover:text-gray-400"
+                                        aria-label="Privacy" href="privacy.html">Privacy</a><a role="presentation"
+                                        class="text-base md:text-lg text-spacegrey dark:text-darkmoon hover:text-gray-400"
+                                        aria-label="Jobs" href="jobs.html">Jobs</a></div>
+                                <div class="flex gap-24 lg:gap-32 xl:gap-40 items-center"></div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script id="__NEXT_DATA__"
+        type="application/json">{"props":{"pageProps":{"datocms":{"enabled":false,"initialData":{"start":{"seoSettings":{"description":"Start building your next web application immediately. Code your business logic on top of a powerful kickstarter app with all essential features you need. ","image":{"url":"https://www.datocms-assets.com/62402/1644953587-logo_og-image-white-on-dark.png"},"title":"ROQ - Build web applications faster than ever"},"seoKeywords":"","seoRobotsEnabled":false,"heroStartpage":[{"id":"55979681","headline":"\u003cp\u003e\u003cspan\u003eTurn your web app into a fully-fledged SaaS application\u003c/span\u003e\u003c/p\u003e","subheadline":"\u003cp\u003e\u003cspan\u003eReady-to-use UI components and APIs for all essential features you need to build your SaaS application\u003c/span\u003e\u003c/p\u003e","hasAction":true,"actions":[{"__typename":"CtaRecord","id":"55979679","link":"/contact-us","label":"Get started","haveLogo":false,"hasRightArrowIcon":false,"logo":null,"backgroundColor":"#2FBDEA"},{"__typename":"CtaRecord","id":"56111011","link":"https://github.com/roqtech/react-ui-components","label":"Github","haveLogo":true,"hasRightArrowIcon":false,"logo":{"url":"https://www.datocms-assets.com/62402/1653557629-github-icon.svg","alt":"github-icon."},"backgroundColor":"#878AA5"}],"media":{"id":"22555507","url":"https://www.datocms-assets.com/62402/1668172605-hero-home_dark.svg","width":1600,"height":1200,"alt":null,"focalPoint":null}}],"content":{"value":{"schema":"dast","document":{"type":"root","children":[{"item":"55984082","type":"block"}]}},"blocks":[{"__typename":"StickyNavigationRecord","id":"55984082","headline":"ROQ leverages ready-to-use UI components with API's that provide you with all the features necessary for your application. ","contents":[{"id":"55984401","referenceId":"authentication","referenceTitle":"Authentication","ratio":"6/6","alignItem":"start","content":[{"id":"55984399","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"item":"55984398","type":"block"}]}},"blocks":[{"__typename":"ImageRecord","id":"55984398","respectSize":true,"image":{"title":null,"url":"https://www.datocms-assets.com/62402/1668395008-hero-login_light.svg","width":1600,"height":1200,"alt":null,"mimeType":"image/svg+xml","video":null,"focalPoint":null}}]},"showOnTop":null},{"id":"55984400","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":2,"children":[{"type":"span","marks":["strong"],"value":"Authentication"}]},{"type":"paragraph","children":[{"type":"span","marks":["strong"],"value":"Advanced authentication features in a matter of minutes."}]},{"type":"paragraph","children":[{"type":"span","value":"Leverage state-of-the-art authentication and authorization to enhance your application with SSO, MFA, and password forgotten. Offer your users more security and less friction."}]},{"item":"56354406","type":"block"}]}},"blocks":[{"id":"56354406","__typename":"CallToActionGroupRecord","ctas":[{"id":"56354403","link":"https://github.com/roqtech/react-ui-components","label":"Github","haveLogo":true,"hasRightArrowIcon":false,"logo":{"url":"https://www.datocms-assets.com/62402/1653557629-github-icon.svg","alt":"github-icon."},"backgroundColor":"#FFFFFF"},{"id":"56354405","link":"/product/authentication","label":"Learn more","haveLogo":false,"hasRightArrowIcon":false,"logo":null,"backgroundColor":"#FFFFFF"}]}]},"showOnTop":true}]},{"id":"55984081","referenceId":"user-management","referenceTitle":"User management","ratio":"6/6","alignItem":"start","content":[{"id":"55984078","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":2,"children":[{"type":"span","marks":["strong"],"value":"User Management"}]},{"type":"paragraph","children":[{"type":"span","marks":["strong"],"value":"A user management that puts your customers first."}]},{"type":"paragraph","children":[{"type":"span","value":"From sign-up through purchase, create a great experience for both you and your users.&nbsp;Set up individual user profiles, including avatars, time-zones, and language preferences. "}]},{"item":"56064330","type":"block"}]}},"blocks":[{"id":"56064330","__typename":"CallToActionGroupRecord","ctas":[{"id":"56064327","link":"https://github.com/roqtech/react-ui-components","label":"Github","haveLogo":true,"hasRightArrowIcon":false,"logo":{"url":"https://www.datocms-assets.com/62402/1653557629-github-icon.svg","alt":"github-icon."},"backgroundColor":"#FFFFFF"},{"id":"57697180","link":"/product/user-management","label":"Details","haveLogo":false,"hasRightArrowIcon":false,"logo":null,"backgroundColor":"#FFFFFF"}]}]},"showOnTop":null},{"id":"55984080","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"item":"55984106","type":"block"}]}},"blocks":[{"__typename":"ImageRecord","id":"55984106","respectSize":true,"image":{"title":null,"url":"https://www.datocms-assets.com/62402/1668394853-hero-usermanagement_light.svg","width":1600,"height":1200,"alt":null,"mimeType":"image/svg+xml","video":null,"focalPoint":null}}]},"showOnTop":null}]},{"id":"56062800","referenceId":"user-groups","referenceTitle":"User groups","ratio":"6/6","alignItem":"start","content":[{"id":"56062798","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"item":"56062797","type":"block"}]}},"blocks":[{"__typename":"ImageRecord","id":"56062797","respectSize":true,"image":{"title":null,"url":"https://www.datocms-assets.com/62402/1668394866-hero-usergroups_light.svg","width":1600,"height":1200,"alt":null,"mimeType":"image/svg+xml","video":null,"focalPoint":null}}]},"showOnTop":null},{"id":"56062799","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":2,"children":[{"type":"span","marks":["strong"],"value":"User Groups"}]},{"type":"paragraph","children":[{"type":"span","marks":["strong"],"value":"A modern user group management to structure accounts, teams, and organizations. "}]},{"type":"paragraph","children":[{"type":"span","value":"Our APIs and UI components allow you to set up user groups and their individual functions according to your business logic."}]},{"type":"paragraph","children":[{"type":"span","value":""}]},{"item":"56064335","type":"block"}]}},"blocks":[{"id":"56064335","__typename":"CallToActionGroupRecord","ctas":[{"id":"56064332","link":"https://github.com/roqtech/react-ui-components","label":"Github","haveLogo":true,"hasRightArrowIcon":false,"logo":{"url":"https://www.datocms-assets.com/62402/1653557629-github-icon.svg","alt":"github-icon."},"backgroundColor":"#FFFFFF"}]}]},"showOnTop":true}]},{"id":"55984385","referenceId":"access-management ","referenceTitle":"Access Management ","ratio":"6/6","alignItem":"start","content":[{"id":"55984382","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":2,"children":[{"type":"span","marks":["strong"],"value":"Access Management"}]},{"type":"paragraph","children":[{"type":"span","marks":["strong"],"value":"A smart access management to define access roles for your users."}]},{"type":"paragraph","children":[{"type":"span","value":"Set rules, which user is allowed to retrieve relevant data, tools, or ressources. Our UI components and APIs will allow you to expand your authorization capabilities and act on access rights and permissions for individuals or groups. "}]},{"item":"56064340","type":"block"}]}},"blocks":[{"id":"56064340","__typename":"CallToActionGroupRecord","ctas":[{"id":"56064337","link":"https://github.com/roqtech/react-ui-components","label":"Github","haveLogo":true,"hasRightArrowIcon":false,"logo":{"url":"https://www.datocms-assets.com/62402/1653557629-github-icon.svg","alt":"github-icon."},"backgroundColor":"#FFFFFF"},{"id":"56064339","link":"/product/access-management","label":"Details","haveLogo":false,"hasRightArrowIcon":false,"logo":null,"backgroundColor":"#FFFFFF"}]}]},"showOnTop":null},{"id":"55984384","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"item":"55984383","type":"block"}]}},"blocks":[{"__typename":"ImageRecord","id":"55984383","respectSize":true,"image":{"title":null,"url":"https://www.datocms-assets.com/62402/1668394902-hero-accessmanagement_light.svg","width":1600,"height":1200,"alt":null,"mimeType":"image/svg+xml","video":null,"focalPoint":null}}]},"showOnTop":null}]},{"id":"55984077","referenceId":"Files","referenceTitle":"File Handling","ratio":"6/6","alignItem":"start","content":[{"id":"55984075","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"item":"55984105","type":"block"}]}},"blocks":[{"__typename":"ImageRecord","id":"55984105","respectSize":true,"image":{"title":null,"url":"https://www.datocms-assets.com/62402/1668394914-hero-files_light.svg","width":1600,"height":1200,"alt":null,"mimeType":"image/svg+xml","video":null,"focalPoint":null}}]},"showOnTop":null},{"id":"55984076","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":2,"children":[{"type":"span","marks":["strong"],"value":"File Management"}]},{"type":"paragraph","children":[{"type":"span","marks":["strong"],"value":"Drag \u0026 drop uploader and file handling API."}]},{"type":"paragraph","children":[{"type":"span","value":"To upload, alter, and distribute any file into your SaaS application, leverage an easy to use file uploader and powerful APIs."}]},{"item":"56064344","type":"block"}]}},"blocks":[{"id":"56064344","__typename":"CallToActionGroupRecord","ctas":[{"id":"56064341","link":"https://github.com/roqtech/react-ui-components","label":"Github","haveLogo":true,"hasRightArrowIcon":false,"logo":{"url":"https://www.datocms-assets.com/62402/1653557629-github-icon.svg","alt":"github-icon."},"backgroundColor":"#FFFFFF"},{"id":"56064343","link":"/product/file-management","label":"Details","haveLogo":false,"hasRightArrowIcon":false,"logo":null,"backgroundColor":"#FFFFFF"}]}]},"showOnTop":true}]},{"id":"55984393","referenceId":"notification-mails","referenceTitle":"Notifications","ratio":"6/6","alignItem":"start","content":[{"id":"55984392","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":2,"children":[{"type":"span","marks":["strong"],"value":"Notifications"}]},{"type":"paragraph","children":[{"type":"span","marks":["strong"],"value":"Your in-app notifications and mailing out of the box."}]},{"type":"paragraph","children":[{"type":"span","value":"Our notification feature let's you send notifications to single users or user groups via various channels. Key channels encompass Push, In-App, and Email. Users can manage their own preferences. You can trigger notifications from your app via our GraphQL APIs."}]},{"item":"56064348","type":"block"}]}},"blocks":[{"id":"56064348","__typename":"CallToActionGroupRecord","ctas":[{"id":"56064345","link":"https://github.com/roqtech/react-ui-components","label":"Github","haveLogo":true,"hasRightArrowIcon":false,"logo":{"url":"https://www.datocms-assets.com/62402/1653557629-github-icon.svg","alt":"github-icon."},"backgroundColor":"#FFFFFF"},{"id":"56064347","link":"/product/notifications-mailing","label":"Details","haveLogo":false,"hasRightArrowIcon":false,"logo":null,"backgroundColor":"#FFFFFF"}]}]},"showOnTop":null},{"id":"55984391","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"item":"55984390","type":"block"}]}},"blocks":[{"__typename":"ImageRecord","id":"55984390","respectSize":true,"image":{"title":null,"url":"https://www.datocms-assets.com/62402/1668394927-hero-notifications_light.svg","width":1600,"height":1200,"alt":null,"mimeType":"image/svg+xml","video":null,"focalPoint":null}}]},"showOnTop":null}]},{"id":"55984397","referenceId":"chat","referenceTitle":"Chat","ratio":"6/6","alignItem":"start","content":[{"id":"55984396","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"item":"55984395","type":"block"}]}},"blocks":[{"__typename":"ImageRecord","id":"55984395","respectSize":true,"image":{"title":null,"url":"https://www.datocms-assets.com/62402/1668394965-hero-chat_light.svg","width":1600,"height":1200,"alt":null,"mimeType":"image/svg+xml","video":null,"focalPoint":null}}]},"showOnTop":null},{"id":"55984394","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":2,"children":[{"type":"span","marks":["strong"],"value":"Real-Time Chat"}]},{"type":"paragraph","children":[{"type":"span","marks":["strong"],"value":"Build a real-time in-app chat that is secure and scalable."}]},{"type":"paragraph","children":[{"type":"span","value":"With our SDKs and APIs for messaging, voice, and video calling you can set up an in-app chat in hours not&nbsp;weeks."}]},{"item":"56064352","type":"block"}]}},"blocks":[{"id":"56064352","__typename":"CallToActionGroupRecord","ctas":[{"id":"56064349","link":"https://github.com/roqtech/react-ui-components","label":"Github","haveLogo":true,"hasRightArrowIcon":false,"logo":{"url":"https://www.datocms-assets.com/62402/1653557629-github-icon.svg","alt":"github-icon."},"backgroundColor":"#FFFFFF"},{"id":"56064351","link":"/product/message-center","label":"Details","haveLogo":false,"hasRightArrowIcon":false,"logo":null,"backgroundColor":"#FFFFFF"}]}]},"showOnTop":true}]},{"id":"56062753","referenceId":"translation","referenceTitle":"Translation","ratio":"6/6","alignItem":"start","content":[{"id":"56062752","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":2,"children":[{"type":"span","marks":["strong"],"value":"Translation"}]},{"type":"paragraph","children":[{"type":"span","marks":["strong"],"value":"Translate your entire SaaS application with ease."}]},{"type":"paragraph","children":[{"type":"span","value":"Easily manage all your translations and offer multi-language right from the start to make your solution available to a broader audience."}]},{"item":"56064356","type":"block"}]}},"blocks":[{"id":"56064356","__typename":"CallToActionGroupRecord","ctas":[{"id":"56064353","link":"https://github.com/roqtech/react-ui-components","label":"Github","haveLogo":true,"hasRightArrowIcon":false,"logo":{"url":"https://www.datocms-assets.com/62402/1653557629-github-icon.svg","alt":"github-icon."},"backgroundColor":"#FFFFFF"}]}]},"showOnTop":null},{"id":"56062751","content":{"value":{"schema":"dast","document":{"type":"root","children":[{"item":"56062750","type":"block"}]}},"blocks":[{"__typename":"ImageRecord","id":"56062750","respectSize":true,"image":{"title":null,"url":"https://www.datocms-assets.com/62402/1668394951-hero-translation_light.svg","width":1600,"height":1200,"alt":null,"mimeType":"image/svg+xml","video":null,"focalPoint":null}}]},"showOnTop":null}]}]}]}},"header":{"primaryCta":[{"label":"User Login","link":"https://console.roq.tech/","backgroundColor":"auto"}],"secondaryCta":[{"label":"Talk to the team","link":"/contact-us","backgroundColor":"auto","haveLogo":false,"logo":{"url":"https://www.datocms-assets.com/62402/1663935504-github-logo_white.svg","alt":"Github Logo"}}],"banner":[{"mobileContent":"\u003cp\u003e&#128679; We will be launching our updated website soon! &#128679;\u003c/p\u003e","desktopContent":"\u003cp\u003e&#128679; We are currently launching a new website, stay tuned! &#128679;\u003c/p\u003e","id":"56110803"}],"headerLinks":[{"id":"56064164","isFlyoutMenu":true,"hasSecondMenu":true,"hasThirdMenu":true,"firstMenuHeadline":"Enrich Applications","customPreviewImage":{"alt":null,"url":"https://www.datocms-assets.com/62402/1661779604-thumbnail-praveen_roq_one.png","video":null},"customPreviewHeadline":"Watch walkthrough videos of all ROQ products","useCustomPreviewImage":false,"cta":[{"id":"56064165","label":"Features","link":"/product","logo":null}],"secondMenuHeadline":"Start from Scratch","firstMenuItems":[{"id":"56064166","useExternalLink":false,"externalLink":"","linkTo":{"__typename":"ContentPageRecord","id":"56064223","secondLevelSlug":"product","genericSecondLevelSlug":"authentication","thirdLevelRequired":true,"thirdLevelSlug":"authentication"},"tooltip":"","label":"Authentication","haveIcon":true,"icon":{"url":"https://www.datocms-assets.com/62402/1668164397-authentication.png","alt":null}},{"id":"56064168","useExternalLink":null,"externalLink":"","linkTo":{"__typename":"ContentPageRecord","id":"56064554","secondLevelSlug":"product","genericSecondLevelSlug":"access-management","thirdLevelRequired":true,"thirdLevelSlug":"access-management"},"tooltip":"","label":"Access Management","haveIcon":true,"icon":{"url":"https://www.datocms-assets.com/62402/1668165770-access-control-1.png","alt":null}},{"id":"56064167","useExternalLink":null,"externalLink":"","linkTo":{"__typename":"ContentPageRecord","id":"56064540","secondLevelSlug":"product","genericSecondLevelSlug":"user-management","thirdLevelRequired":true,"thirdLevelSlug":"user-management"},"tooltip":"","label":"User Management","haveIcon":true,"icon":{"url":"https://www.datocms-assets.com/62402/1668163886-settings.png","alt":null}},{"id":"56064640","useExternalLink":false,"externalLink":"","linkTo":{"__typename":"ContentPageRecord","id":"56064629","secondLevelSlug":"product","genericSecondLevelSlug":"notifications-mailing","thirdLevelRequired":true,"thirdLevelSlug":"notifications-mailing"},"tooltip":"","label":"Notifications","haveIcon":true,"icon":{"url":"https://www.datocms-assets.com/62402/1668165822-email.png","alt":null}},{"id":"56064677","useExternalLink":false,"externalLink":"","linkTo":{"__typename":"ContentPageRecord","id":"56064651","secondLevelSlug":"product","genericSecondLevelSlug":"message-center","thirdLevelRequired":true,"thirdLevelSlug":"message-center"},"tooltip":"","label":"Real-Time Chat","haveIcon":true,"icon":{"url":"https://www.datocms-assets.com/62402/1668164832-talk.png","alt":null}},{"id":"56064737","useExternalLink":false,"externalLink":"","linkTo":{"__typename":"ContentPageRecord","id":"56064705","secondLevelSlug":"product","genericSecondLevelSlug":"file-management","thirdLevelRequired":true,"thirdLevelSlug":"file-management"},"tooltip":"","label":"File Management","haveIcon":true,"icon":{"url":"https://www.datocms-assets.com/62402/1668164974-folder-management.png","alt":null}}],"secondMenuItems":[{"id":"57561827","useExternalLink":false,"externalLink":"","linkTo":{"__typename":"ContentPageRecord","id":"24057366","secondLevelSlug":"product","genericSecondLevelSlug":"roq-one","thirdLevelRequired":true,"thirdLevelSlug":"roq-one"},"tooltip":"","label":"ROQ One Kickstarter","haveIcon":false,"icon":null},{"id":"57561828","useExternalLink":false,"externalLink":"","linkTo":{"__typename":"ContentPageRecord","id":"24057410","secondLevelSlug":"product","genericSecondLevelSlug":"roq-platform","thirdLevelRequired":true,"thirdLevelSlug":"roq-platform"},"tooltip":"","label":"ROQ Platform Feature API","haveIcon":false,"icon":null},{"id":"57561829","useExternalLink":false,"externalLink":"","linkTo":{"id":"15063479","__typename":"BlogRecord","slug":"roq-vs-low-code-eng"},"tooltip":"","label":"Low Code vs. ROQ Code","haveIcon":false,"icon":null}],"article":null,"thirdMenuQuestion":"Curious to learn more?","thirdMenuCta":[{"label":"Talk to an expert","link":"/expert-call"}]},{"id":"56064170","isFlyoutMenu":true,"hasSecondMenu":true,"hasThirdMenu":true,"firstMenuHeadline":"Use Cases        ","customPreviewImage":null,"customPreviewHeadline":"","useCustomPreviewImage":null,"cta":[{"id":"56064171","label":"Use Cases","link":"/customer-stories","logo":null}],"secondMenuHeadline":"Customer References","firstMenuItems":[{"id":"56064172","useExternalLink":null,"externalLink":"","linkTo":{"__typename":"ContentPageRecord","id":"57475693","secondLevelSlug":"","genericSecondLevelSlug":"b2b-use-cases","thirdLevelRequired":false,"thirdLevelSlug":"b2b-use-cases"},"tooltip":"","label":"B2B SaaS Applications","haveIcon":null,"icon":null},{"id":"56064173","useExternalLink":null,"externalLink":"","linkTo":{"__typename":"ContentPageRecord","id":"57475693","secondLevelSlug":"","genericSecondLevelSlug":"b2b-use-cases","thirdLevelRequired":false,"thirdLevelSlug":"b2b-use-cases"},"tooltip":"","label":"B2C SaaS Applications","haveIcon":null,"icon":null}],"secondMenuItems":[{"id":"57482901","useExternalLink":false,"externalLink":"","linkTo":{"id":"15063386","__typename":"CustomerStoryRecord","slug":"case-study-voly"},"tooltip":"","label":"Voly","haveIcon":false,"icon":null},{"id":"57482902","useExternalLink":false,"externalLink":"","linkTo":{"id":"15063388","__typename":"CustomerStoryRecord","slug":"case-study-flexcavo"},"tooltip":"","label":"Flexcavo","haveIcon":false,"icon":null},{"id":"57482903","useExternalLink":false,"externalLink":"","linkTo":{"id":"15063384","__typename":"CustomerStoryRecord","slug":"case-study-helm"},"tooltip":"","label":"Helm AG","haveIcon":false,"icon":null}],"article":null,"thirdMenuQuestion":"Interested to learn more?","thirdMenuCta":[{"label":"Talk to an expert","link":"/expert-call"}]},{"id":"45360189","isFlyoutMenu":false,"hasSecondMenu":null,"hasThirdMenu":null,"firstMenuHeadline":"","customPreviewImage":null,"customPreviewHeadline":"","useCustomPreviewImage":null,"cta":[{"id":"45360188","label":"Docs","link":"https://docs.roq.tech/dev/","logo":null}],"secondMenuHeadline":"","firstMenuItems":[],"secondMenuItems":[],"article":null,"thirdMenuQuestion":"","thirdMenuCta":[]},{"id":"15063318","isFlyoutMenu":false,"hasSecondMenu":null,"hasThirdMenu":null,"firstMenuHeadline":"","customPreviewImage":null,"customPreviewHeadline":"","useCustomPreviewImage":null,"cta":[{"id":"15063317","label":"About Us","link":"/about-us","logo":null}],"secondMenuHeadline":"","firstMenuItems":[],"secondMenuItems":[],"article":null,"thirdMenuQuestion":"","thirdMenuCta":[]}]},"footer":{"brandText":"&copy; 2022 Platform 360 GmbH. All rights reserved.","mainLinks":[{"headline":"Product","ctas":[{"id":"15063284","link":"#usp","label":"Benefits with ROQ","haveLogo":false,"hasRightArrowIcon":false,"logo":null,"backgroundColor":"auto"},{"id":"15063285","link":"/product#feature-grid","label":"Features","haveLogo":false,"hasRightArrowIcon":false,"logo":null,"backgroundColor":"auto"}]},{"headline":"Use Cases","ctas":[{"id":"15063287","link":"/customer-stories/case-study-helm","label":"Helm AG","haveLogo":false,"hasRightArrowIcon":false,"logo":null,"backgroundColor":"auto"},{"id":"15063288","link":"/customer-stories/case-study-voly","label":"Voly","haveLogo":false,"hasRightArrowIcon":false,"logo":null,"backgroundColor":"auto"},{"id":"15063289","link":"/customer-stories/case-study-flexcavo","label":"Flexcavo","haveLogo":false,"hasRightArrowIcon":false,"logo":null,"backgroundColor":"auto"}]},{"headline":"Company","ctas":[{"id":"15063291","link":"/company","label":"Story","haveLogo":false,"hasRightArrowIcon":false,"logo":null,"backgroundColor":"auto"},{"id":"15063292","link":"https://www.roq.tech/en/jobs","label":"Jobs","haveLogo":false,"hasRightArrowIcon":false,"logo":{"url":"https://www.datocms-assets.com/62402/1644311362-linkedin.png","alt":"linkedin"},"backgroundColor":"auto"}]}],"socialLinks":[],"internalLinks":[{"label":"Imprint","link":"/imprint"},{"label":"Privacy","link":"/privacy"},{"label":"Jobs","link":"/jobs"}]}}},"_nextI18Next":{"initialI18nStore":{"en":{"header":{"news-headline":"News: Former Rocket CTOs raise $10M in seed funding","jobs":"Jobs"},"footer":{"imprint":"Imprint","privacy":"Privacy Policy"},"consent":{"content-line":"We use cookies to improve your experience. Find out more in our","privacy-policy-link":"Privacy Policy","accept":"Accept","decline":"Decline"},"features":{"infrastructure":"Infrastructure","ui_ux":"User Interface","data_connectors":"Data connectors","generic_features":"Generic features","your_uniqueness":"Your uniqueness"}}},"userConfig":{"i18n":{"defaultLocale":"en","locales":["en"],"reloadOnPrerender":true,"react":{"useSuspense":false,"wait":true}},"default":{"i18n":{"defaultLocale":"en","locales":["en"],"reloadOnPrerender":true,"react":{"useSuspense":false,"wait":true}}}}}},"__N_SSG":true},"page":"/","query":{},"buildId":"EeGLc4iGJ2qOJuyqOmwcf","isFallback":false,"gsp":true,"locale":"en","locales":["en"],"defaultLocale":"en","scriptLoader":[]}</script>
+</body>
+
+</html>
